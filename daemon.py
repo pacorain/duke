@@ -29,6 +29,7 @@ class Daemon:
 
         # decouple from parent environment
         os.chdir('/')
+        os.putenv('BUILD_ID', 'nokill')
         os.setsid()
         os.umask(0)
 
