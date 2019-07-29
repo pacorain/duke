@@ -71,6 +71,9 @@ class MessageScheduler:
             h, m = message['schedule']['time'].split(':')
             tm = time(int(h), int(m))
             message_time = datetime.combine(dt, tm, tzinfo=tz)
+            if datetime.now(tz=tz) > message_time + timedelta(minutes=15):
+                # Don't schedule the message -- it's already too late
+                return
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
 
