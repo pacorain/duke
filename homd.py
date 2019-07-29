@@ -14,15 +14,15 @@ logger.addHandler(handler)
 
 class HouseOfMisfitsDaemon(Daemon):
     def run(self):
-        logger.info("Starting chatbot.")
-        chatbot = Chatbot()
-        while True:
-            try:
+        try:
+            logger.info("Starting chatbot.")
+            chatbot = Chatbot()
+            while True:
                 chatbot.eval()
                 time.sleep(1)
-            except Exception as e:
-                logger.critical("Something happened, closing.")
-                logger.critical(e)
+        except Exception as e:
+            logger.critical("Something happened, closing.")
+            logger.critical(e)
 
 
 if __name__ == "__main__":
