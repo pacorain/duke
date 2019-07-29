@@ -1,7 +1,7 @@
 import datetime
 import os
 import requests
-import json
+import yaml
 import tracery
 from tracery.modifiers import base_english
 import logging
@@ -51,11 +51,11 @@ class Message:
 
     def _get_webhook_url(self):
         """
-        Gets the appropriate Discord webhook URL from webhooks.json
+        Gets the appropriate Discord webhook URL from webhooks.yaml
         """
-        webhooks_path = os.getenv('WORKSPACE') + '/webhooks.json'
+        webhooks_path = os.getenv('WORKSPACE') + '/webhooks.yml'
         with open(webhooks_path, 'r') as webhooks_file:
-            all_webhooks = json.load(webhooks_file)
+            all_webhooks = yaml.safe_load(webhooks_file)
         return all_webhooks[self.webhook_name]
 
     class AlreadySentException(Exception):
