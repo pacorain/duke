@@ -1,0 +1,30 @@
+wellness_reminder:
+  - "#general_greeting.capitalize# #wellness_reminder_full#"
+  - "#wellness_reminder_full# #wellness_conclusion#"
+  - "#general_greeting.capitalize# #wellness_reminder_full# #wellness_conclusion#"
+general_greeting:
+  - hello, there!
+  - hi everyone!
+  - greetings fellow Misfits.
+  - how are you doing?
+  - howdy, y'all!
+  - sup my homies.
+  - "SUPER IMPORTANT REMINDER:"
+wellness_conclusion:
+  - Thanks!
+  - Thanks, y'all!
+  - Take care, y'all! <3
+  - "And always remember: **you are the best**"
+  - That's all.
+  - Be kind to yourself!
+  - ":heart:"
+  - ":heart-1:"
+  - "\\:heart:"
+wellness_reminder_full:
+  - "#[#setReminder#]reminder_basic_format#"
+setReminder:
+  - "#[reminder_noun:water][reminder_done:had enough water][reminder_do:drink plenty of water][reminder_is:water is][reminder_protip:add fruit to your water to give it some flavor]#"
+  - "#[reminder_noun:your meds][reminder_done:taken your meds][reminder_do:take your daily medications and vitamins][reminder_is:prescribed medications are][reminder_protip:put your medications in a calendar if you find yourself forgetting]#"
+reminder_basic_format:
+  - "Have you #reminder_done# today? Make sure you #reminder_do# throughout your day."
+  - "Don't forget about #reminder_noun#! If it helps, you can #reminder_protip#."

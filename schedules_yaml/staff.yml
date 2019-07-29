@@ -1,0 +1,8 @@
+- message: This is a 15 minute pre-meeting reminder.
+  webhook: staff_reminders
+  schedule:
+    type: weekly
+    time: 16:05
+    days:
+      - Saturday
+      - Monday
