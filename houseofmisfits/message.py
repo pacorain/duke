@@ -1,4 +1,6 @@
 import datetime
+import os
+
 import requests
 import json
 
@@ -46,7 +48,8 @@ class Message:
         """
         Gets the appropriate Discord webhook URL from webhooks.json
         """
-        with open('webhooks.json', 'r') as webhooks_file:
+        webhooks_path = os.getenv('WORKSPACE') + '/webhooks.json'
+        with open(webhooks_path, 'r') as webhooks_file:
             all_webhooks = json.load(webhooks_file)
         return all_webhooks[self.webhook_name]
 

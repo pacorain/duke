@@ -1,17 +1,28 @@
 #!/usr/bin/env python
-
+import os
 import sys
 import time
+import logging
 from daemon import Daemon
 from houseofmisfits import Chatbot
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+handler = logging.FileHandler(os.getenv('WORKSPACE') + '/homd.log')
+logger.addHandler(handler)
 
 
 class HouseOfMisfitsDaemon(Daemon):
     def run(self):
+        logger.info("Starting chatbot.")
         chatbot = Chatbot()
         while True:
-            chatbot.eval()
-            time.sleep(1)
+            try:
+                chatbot.eval()
+                time.sleep(1)
+            except Exception as e:
+                logger.critical("Something happened, closing.")
+                logger.critical(e)
 
 
 if __name__ == "__main__":

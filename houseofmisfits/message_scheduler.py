@@ -21,8 +21,9 @@ class MessageScheduler:
     @staticmethod
     def load_rules():
         rules = {}
-        for file in os.listdir('rules'):
-            with open('rules/' + file, 'r') as json_file:
+        rules_dir = os.getenv('WORKSPACE') + '/rules'
+        for file in os.listdir(rules_dir):
+            with open(rules_dir + '/' + file, 'r') as json_file:
                 rule = json.load(json_file)
                 rules.update(rule)
         return rules
