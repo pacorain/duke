@@ -1,6 +1,7 @@
 .idea/
 
 webhooks.json
+webhooks.yml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
