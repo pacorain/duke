@@ -1,11 +1,14 @@
 import os
 import requests
 
+from houseofmisfits import MessageScheduler
+
 
 class Chatbot:
     def __init__(self):
-        self.run_nr = 0
         self.send_initial_message()
+        self.scheduler = MessageScheduler()
+        self.scheduler.refresh()
 
     def send_initial_message(self):
         """
@@ -26,6 +29,5 @@ class Chatbot:
         Currently does nothing.
         :return:
         """
-        self.run_nr += 1
-        if self.run_nr >= 5:
-            raise Exception("This program has a loop that doesn't do anything. Exiting.")
+        self.scheduler.run_pending()
+
