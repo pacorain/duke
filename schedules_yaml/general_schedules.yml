@@ -1,4 +1,4 @@
-- message: "#wellness_reminder"
+- message: "#wellness_reminder#"
   webhook: aspen_general
   schedule:
     type: hourly
