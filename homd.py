@@ -6,14 +6,13 @@ import logging
 from daemon import Daemon
 from houseofmisfits import Chatbot
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-handler = logging.FileHandler(os.getenv('WORKSPACE') + '/homd.log')
-logger.addHandler(handler)
-
 
 class HouseOfMisfitsDaemon(Daemon):
     def run(self):
+        logger = logging.getLogger(__name__)
+        logger.setLevel(logging.DEBUG)
+        handler = logging.FileHandler(os.getenv('WORKSPACE') + '/homd.log')
+        logger.addHandler(handler)
         try:
             logger.info("Starting chatbot.")
             chatbot = Chatbot()

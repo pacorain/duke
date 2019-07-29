@@ -1,15 +1,15 @@
 import datetime
 import os
-
 import requests
 import json
-
 import tracery
 from tracery.modifiers import base_english
+import logging
+logger = logging.getLogger(__name__)
 
 
 class Message:
-    def __init__(self, webhook_name: str, message: str, rules: dict, scheduled_time: datetime):
+    def __init__(self, webhook_name: str, message: str, rules: dict, scheduled_time: datetime.datetime):
         """
         Initialize a message
         :param webhook_name: The name of the webhook to use
@@ -20,6 +20,7 @@ class Message:
         self.rules = rules
         self.message = self.flatten(message)
         self.scheduled_time = scheduled_time
+        logger.debug("Message scheduled for {}".format(self.scheduled_time.isoformat()))
         self.is_sent = False
 
     def flatten(self, message):
@@ -29,7 +30,9 @@ class Message:
         """
         grammar = tracery.Grammar(self.rules)
         grammar.add_modifiers(base_english)
-        return grammar.flatten(message)
+        flattened_message = grammar.flatten(message)
+        logger.debug("'{}' flattened to '{}'".format(message, flattened_message))
+        return flattened_message
 
     def send(self):
         """
@@ -41,8 +44,10 @@ class Message:
         payload = {"content": self.message}
         headers = {'Content-Type': 'application/json'}
         req = requests.post(webhook_url, json=payload, headers=headers)
-        print(req.content)
         self.is_sent = True
+        logger.debug("Message sent to {} with status code {}. Response: {}".format(
+            self.webhook_name, req.status_code, req.content))
+
 
     def _get_webhook_url(self):
         """

@@ -2,8 +2,11 @@ import os
 from datetime import date, timedelta, datetime
 
 import json
+import logging
 
 from houseofmisfits import Message
+
+logger = logging.getLogger(__name__)
 
 
 class MessageScheduler:
@@ -15,6 +18,7 @@ class MessageScheduler:
     def run_pending(self):
         for message in self.messages:
             if datetime.now() >= message.scheduled_time:
+                logger.debug("Sending message with {}: {}".format(message.webhook_name, message.message))
                 message.send()
                 self.messages.remove(message)
 

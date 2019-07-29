@@ -25,9 +25,6 @@ class Chatbot:
     def eval(self):
         """
         Check for any pending actions and perform them.
-
-        Currently does nothing.
-        :return:
         """
         self.scheduler.run_pending()
 
