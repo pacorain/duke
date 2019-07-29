@@ -1,7 +1,7 @@
 import os
 from datetime import date, timedelta, datetime, time
 
-import json
+import yaml
 import logging
 from pytz import timezone
 
@@ -82,8 +82,8 @@ class MessageScheduler:
         rules = {}
         rules_dir = os.getenv('WORKSPACE') + '/rules'
         for file in os.listdir(rules_dir):
-            with open(rules_dir + '/' + file, 'r') as json_file:
-                rule = json.load(json_file)
+            with open(rules_dir + '/' + file, 'r') as yaml_file:
+                rule = yaml.safe_load(yaml_file)
                 rules.update(rule)
         return rules
 
@@ -92,7 +92,7 @@ class MessageScheduler:
         schedules = []
         schedules_dir = os.getenv('WORKSPACE') + '/schedules'
         for file in os.listdir(schedules_dir):
-            with open(schedules_dir + '/' + file, 'r') as json_file:
-                schedule = json.load(json_file)
+            with open(schedules_dir + '/' + file, 'r') as yaml_file:
+                schedule = yaml.safe_load(yaml_file)
                 schedules += schedule
         return schedules
