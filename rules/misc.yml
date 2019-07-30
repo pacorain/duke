@@ -1,0 +1,15 @@
+general_greeting:
+  - hello, there!
+  - hi everyone!
+  - greetings fellow Misfits.
+  - how are you doing?
+  - howdy, y'all!
+  - sup my homies.
+  - "SUPER IMPORTANT REMINDER:"
+ping_everyone:
+  - "Hey there #everyone#!"
+  - "Hello, #everyone#!"
+  - "#everyone# Hey there!"
+  - "Paging Dr. #everyone#. Dr. #everyone#, do you copy?"
+  - "Good news, #everyone#!"
+  - "PSSSSSST. Hey #everyone#."

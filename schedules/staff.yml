@@ -1,8 +1,16 @@
-- message: "#wellness_reminder#"
+- message: "#staff_daybefore_reminder#"
   webhook: staff_reminders
   schedule:
     type: weekly
-    time: "16:05"
+    time: "19:15"
+    days:
+      - Friday
+      - Monday
+- message: "#staff_premeeting_reminder#"
+  webhook: staff_reminders
+  schedule:
+    type: weekly
+    time: "18:59"
     days:
       - Saturday
-      - Monday
+      - Tuesday
