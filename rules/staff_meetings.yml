@@ -1,0 +1,11 @@
+staff_premeeting_reminder:
+  - "#ping_everyone# #[timeframe:in 15 minutes]meeting_reminder#"
+staff_daybefore_reminder:
+  - "#ping_everyone# #[timeframe:tomorrow]meeting_reminder#"
+meeting_reminder:
+  - "#remember# there is a team meeting in #timeframe#"
+remember:
+  - "In case you forgot,"
+  - "Don't forget"
+  - "Just a friendly reminder"
+  - "Just wanted to remind you that"

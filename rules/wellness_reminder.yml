@@ -2,14 +2,7 @@ wellness_reminder:
   - "#general_greeting.capitalize# #wellness_reminder_full#"
   - "#wellness_reminder_full# #wellness_conclusion#"
   - "#general_greeting.capitalize# #wellness_reminder_full# #wellness_conclusion#"
-general_greeting:
-  - hello, there!
-  - hi everyone!
-  - greetings fellow Misfits.
-  - how are you doing?
-  - howdy, y'all!
-  - sup my homies.
-  - "SUPER IMPORTANT REMINDER:"
+  - "#wellness_reminder_full#"
 wellness_conclusion:
   - Thanks!
   - Thanks, y'all!
@@ -22,9 +15,85 @@ wellness_conclusion:
   - "\\:heart:"
 wellness_reminder_full:
   - "#[#setReminder#]reminder_basic_format#"
-setReminder:
-  - "#[reminder_noun:water][reminder_done:had enough water][reminder_do:drink plenty of water][reminder_is:water is][reminder_protip:add fruit to your water to give it some flavor]#"
-  - "#[reminder_noun:your meds][reminder_done:taken your meds][reminder_do:take your daily medications and vitamins][reminder_is:prescribed medications are][reminder_protip:put your medications in a calendar if you find yourself forgetting]#"
 reminder_basic_format:
   - "Have you #reminder_done# today? Make sure you #reminder_do# throughout your day."
   - "Don't forget about #reminder_noun#! If it helps, you can #reminder_protip#."
+  - "Don't forget to #reminder_do#!"
+  - "Make sure you #reminder_do# today. #reminder_is# #reminder_important#!"
+reminder_important:
+  - important
+  - super important
+  - vital to your health
+  - a good thing
+  - always good to remember
+  - very valuable
+setReminder:
+  - "#[reminder_noun:#water_reminder_noun#][reminder_done:#water_reminder_done#][reminder_do:#water_reminder_do#][reminder_is:#water_reminder_is#][reminder_protip:#water_reminder_protip#]#"
+  - "#[reminder_noun:#meds_reminder_noun#][reminder_done:#meds_reminder_done#][reminder_do:#meds_reminder_do#][reminder_is:#meds_reminder_is#][reminder_protip:#meds_reminder_protip#]#"
+  - "#[reminder_noun:#outside_reminder_noun#][reminder_done:#outside_reminder_done#][reminder_do:#outside_reminder_do#][reminder_is:#outside_reminder_is#][reminder_protip:#outside_reminder_protip#]#"
+water_reminder_noun:
+  - water
+  - water
+  - water
+  - getting enough water
+  - your water intake
+  - how much water you're drinking
+water_reminder_done:
+  - had enough water
+  - drank enough water
+  - had enough to drink
+water_reminder_do:
+  - drink plenty of water
+  - drink some water
+  - get some water
+  - drink at least 8 cups of water
+water_reminder_is:
+  - getting enough water is
+  - having enough to drink is
+  - drinking at least 8 cups of water is
+  - staying hydrated is
+water_reminder_protip:
+  - add fruit to your water to give it some flavor
+meds_reminder_noun:
+  - meds
+  - medication
+  - pills
+meds_reminder_done:
+  - taken your meds
+  - taken your medications and vitamins
+meds_reminder_do:
+  - take your daily medications and vitamins
+  - take your medication
+meds_reminder_is:
+  - taking your medication consistently is
+  - prescribed meds are
+  - taking meds as prescribed is
+meds_reminder_protip:
+  - put your medications in a calendar if you find yourself forgetting
+  - get a pill organizer to keep track
+  - pretend they're Max HP Potions
+outside_reminder_noun:
+  - the outdoors
+  - some technology-free time
+  - getting up and moving around for a while
+  - physical activity
+outside_reminder_done:
+  - gone outside
+  - taken some space
+  - moved around
+  - taken a walk
+outside_reminder_do:
+  - take some space
+  - go for a walk
+  - get some fresh air
+  - log of Discord for a bit
+outside_reminder_is:
+  - moving around is
+  - moving your muscles is
+  - taking some time to do other things is
+  - joining meatspace is
+  - getting fresh air is
+outside_reminder_protip:
+  - use an activity tracker to track a walk
+  - call a friend (or join voice chat!) while you move around
+  - dance to some music you like
