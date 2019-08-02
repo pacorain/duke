@@ -45,6 +45,8 @@ class MessageScheduler:
                 self.schedule_hourly(scheduled_message)
             elif schedule_type == 'weekly':
                 self.schedule_weekly(scheduled_message)
+            elif schedule_type == 'minutely':
+                self.schedule_minutely(scheduled_message)
             else:
                 raise KeyError(schedule_type)
         self.date = date.today()
@@ -56,6 +58,18 @@ class MessageScheduler:
         webhook = message['webhook']
         unflat_text = message['message']
         for message_time in (start_time + timedelta(hours=n) for n in range(0, 24, interval)):
+            if datetime.now(tz=tz) > message_time:
+                continue
+            new_message = Message(webhook, unflat_text, self.rules, message_time)
+            self.messages.append(new_message)
+
+    def schedule_minutely(self, message):
+        tz = timezone('US/Eastern')
+        start_time = datetime.combine(date.today(), time(0, 0, 0), tzinfo=tz)
+        interval = message['schedule']['interval']
+        webhook = message['webhook']
+        unflat_text = message['message']
+        for message_time in (start_time + timedelta(minutes=n) for n in range(0, 1440, interval)):
             if datetime.now(tz=tz) > message_time:
                 continue
             new_message = Message(webhook, unflat_text, self.rules, message_time)
