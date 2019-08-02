@@ -1,5 +1,7 @@
 import os
 import requests
+import socket
+from datetime import datetime
 
 from houseofmisfits import MessageScheduler
 
@@ -15,7 +17,7 @@ class Chatbot:
         Send a test message to demonstrate that the server is working.
         """
         webhook_url = os.getenv('SYS_WEBHOOK_URL')
-        message = "Webhook successfully started on " + os.name
+        message = "Webhook successfully started on " + socket.gethostname() + " at " + datetime.now().isoformat()
 
         payload = {"content": message}
 
