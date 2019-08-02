@@ -9,7 +9,7 @@ from houseofmisfits import Chatbot
 
 class HouseOfMisfitsDaemon(Daemon):
     def run(self):
-        logger = logging.getLogger(__name__)
+        logger = logging.getLogger()
         logger.setLevel(logging.DEBUG)
         handler = logging.FileHandler(os.getenv('WORKSPACE') + '/homd.log')
         logger.addHandler(handler)
