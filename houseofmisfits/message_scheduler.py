@@ -26,6 +26,7 @@ class MessageScheduler:
         self.messages = []
         self.date = date.today()
         self.rules = MessageScheduler.load_rules()
+        logger.debug("Loaded rules, {} rules total".format(len(self.rules)))
 
     def run_pending(self):
         tz = timezone('US/Eastern')
@@ -34,11 +35,13 @@ class MessageScheduler:
             self.date = date.today()
         for message in self.messages:
             if datetime.now(tz=tz) >= message.scheduled_time:
-                logger.debug("Sending message with {}: {}".format(message.webhook_name, message.message))
+                logger.info("Sending message with {}: {}".format(message.webhook_name, message.message))
                 message.send()
                 self.messages.remove(message)
+                logger.debug("{} messages left to send".format(len(self.messages)))
 
     def refresh(self):
+        logger.debug("Loading new schedules for {}".format(date.today().isoformat()))
         for scheduled_message in MessageScheduler.load_schedules():
             schedule_type = scheduled_message['schedule']['type']
             if schedule_type == 'hourly':
@@ -50,6 +53,7 @@ class MessageScheduler:
             else:
                 raise KeyError(schedule_type)
         self.date = date.today()
+        logger.info("All messages added, {} messages in total".format(len(self.messages)))
 
     def schedule_hourly(self, message):
         tz = timezone('US/Eastern')
