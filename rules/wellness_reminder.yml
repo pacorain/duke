@@ -10,6 +10,11 @@ wellness_conclusion:
   - "And always remember: **you are the best**"
   - That's all.
   - Be kind to yourself!
+  - Be good to yourself!
+  - <3
+  - At the end of the day, the only person you have to answer to is yourself.
+  - "You're awesome!"
+  - "This message brought to you by YOU. Because you're **amazing.**"
   - ":heart:"
   - ":heart-1:"
   - "\\:heart:"
@@ -20,6 +25,9 @@ reminder_basic_format:
   - "Don't forget about #reminder_noun#! If it helps, you can #reminder_protip#."
   - "Don't forget to #reminder_do#!"
   - "Make sure you #reminder_do# today. #reminder_is# #reminder_important#!"
+  - "Pro tip: You can #reminder_protip# to make sure you #reminder_do#"
+  - "Just a friendly reminder to #reminder_do#!"
+  - "If you haven't #reminder_done# today, make sure you do!"
 reminder_important:
   - important
   - super important
@@ -42,6 +50,7 @@ water_reminder_done:
   - had enough water
   - drank enough water
   - had enough to drink
+  - hydrated
 water_reminder_do:
   - drink plenty of water
   - drink some water
@@ -52,6 +61,8 @@ water_reminder_is:
   - having enough to drink is
   - drinking at least 8 cups of water is
   - staying hydrated is
+  - keeping yourself hydrated is
+  - taking care of your body is
 water_reminder_protip:
   - add fruit to your water to give it some flavor
 meds_reminder_noun:
@@ -77,16 +88,19 @@ outside_reminder_noun:
   - some technology-free time
   - getting up and moving around for a while
   - physical activity
+  - taking a break
 outside_reminder_done:
   - gone outside
   - taken some space
   - moved around
   - taken a walk
+  - taken a break
+  - done any physical activity
 outside_reminder_do:
   - take some space
   - go for a walk
   - get some fresh air
-  - log of Discord for a bit
+  - log off Discord for a bit
 outside_reminder_is:
   - moving around is
   - moving your muscles is
@@ -97,3 +111,36 @@ outside_reminder_protip:
   - use an activity tracker to track a walk
   - call a friend (or join voice chat!) while you move around
   - dance to some music you like
+  - look for augmented reality apps you can use outside
+  - look for activities in your town
+meditate_reminder_noun:
+  - meditation
+  - self-awareness
+  - mindfulness
+  - being aware of your thoughts
+  - knowing how you feel
+meditate_reminder_done:
+  - meditated
+  - practiced meditation
+  - practiced mindfulness
+  - tried meditating
+  - examined your thoughts
+meditate_reminder_do:
+  - meditate
+  - try to be aware of your thoughts and feelings
+  - practice mindfulness
+  - practice self-awareness
+  - occasionally stop and see what you notice
+  - examine how you feel
+meditation_reminder_is:
+  - meditation is
+  - self-awareness is
+  - your thoughts and feelings are
+  - noticing where you feel tension or pressure is
+  - being aware of your thoughts is
+meditation_reminder_protip:
+  - focus on your breathing, and what breathing in and out feels like
+  - look up loving-kindness meditaiton, which will help you focus your energy on bringing good to yourself and others
+  - find static on Spotify or YouTube to play while you meditate
+  - practice mindfulness wherever you are
+  - download a meditation app
