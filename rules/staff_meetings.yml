@@ -3,9 +3,19 @@ staff_premeeting_reminder:
 staff_daybefore_reminder:
   - "#ping_everyone# #[timeframe:tomorrow]meeting_reminder#"
 meeting_reminder:
-  - "#remember# there is a team meeting in #timeframe#"
+  - "#remember# there is a team meeting #timeframe#. #meeting_reminder_conclusion#"
 remember:
   - "In case you forgot,"
   - "Don't forget"
   - "Just a friendly reminder"
   - "Just wanted to remind you that"
+  - "I'm just here to inform you"
+  - "I just found out that"
+  - "Get ready, because"
+meeting_reminder_conclusion:
+  - "Be there or be square!"
+  - "If you can't make it, let an admin know."
+  - "Last one there is a dirty sock!"
+  - "Please try to attend, but let an admin know if you can't."
+  - Go team!
+  - "Let's get shit done!"
