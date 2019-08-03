@@ -14,8 +14,3 @@
     days:
       - Saturday
       - Tuesday
-- message: "#testmisfits#"
-  webhook: staff_reminders
-  schedule:
-    type: minutely
-    interval: 5
