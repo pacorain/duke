@@ -1,0 +1,11 @@
+testmisfits:
+  - "#pingmisfits# #misfitsstatement#"
+pingmisfits:
+  - "#testserver-misfits#"
+  - "Hey #testserver-misfits#!"
+  - "Calling all #testserver-misfits#"
+misfitsstatement:
+  - "Y'all are the best"
+  - "This is a test message"
+  - "How are you doing today?"
+  - "I'm not imaginary, you're imaginary."
