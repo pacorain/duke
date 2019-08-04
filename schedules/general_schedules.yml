@@ -1,5 +1,0 @@
-- message: "#wellness_reminder#"
-  webhook: aspen_general
-  schedule:
-    type: minutely
-    interval: 30
