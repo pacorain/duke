@@ -1,0 +1,5 @@
+staff_event_toastme:
+  - "Hey #staffserver_mod# team! Toast Me is now over! Please collect all the IDs from #ch_toastme# - then put them in #ch_cake_disp# and ping an Admin."
+
+staff_event_reframing:
+  - "Hey #staffserver_mod# team! The Reframing event is now over! Please collect all the IDs from #ch_reframing# - then put them in #ch_cake_disp# and ping an Admin."

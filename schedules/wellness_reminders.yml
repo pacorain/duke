@@ -1,0 +1,89 @@
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Monday
+      - Friday
+    time: "09:00"
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Thursday
+      - Sunday
+    time: "18:00"
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Wednesday
+      - Saturday
+    time: "14:30"
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Saturday
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    time: "14:00"
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Saturday
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    time: "16:30"
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Saturday
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    time: "08:45"
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Saturday
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    time: "14:30"
+- message: "#wellness_reminder#"
+  webhook: aspen_general
+  schedule:
+    type: weekly
+    days:
+      - Saturday
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    time: "17:15"

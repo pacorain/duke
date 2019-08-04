@@ -1,0 +1,24 @@
+announce_toastme_begin:
+  - "#ping_toastme# It’s Toast Me Monday!! Post a pic in #ch_toastme# and type “Toast Me” for wholesome comments. Be sure to respond to other Toasts as well! You get 200 cake for participating. The event will last 12 hours. Happy toasting!"
+
+announce_toastme_end:
+  - Toast Me has ended. Cake will be awarded shortly. Thank you for participating and see you next Monday for Toast Me!!
+
+announce_reframing_begin:
+  - |
+    Hey #ping_reframing#, it's time for some Cognitive Reframing!
+
+    If you have a negative thought, head over to #ch_reframing# and reframe it to be a more constructive thought! Using this process can help you break through the negative mental filters that we sometimes apply.
+
+    All the people who participate will get 250 :cake:
+
+    This event will last 12h. Remember to think positive!
+
+announce_reframing_end:
+  - "#ping_reframing# the event has ended, if you participated you will receive your cake shortly, hope you were able to get a productive reframing!"
+
+mark_reframing_begin:
+  - "Reframing event starts now\n-------------------------------"
+
+mark_reframing_end:
+  - Reframing event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
