@@ -1,0 +1,5 @@
+- message: "#testfail#"
+badsyntax: True
+schedule:
+  type: "hourly:
+  interval: 4
