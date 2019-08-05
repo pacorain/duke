@@ -15,7 +15,7 @@ Messages are built using [Tracery](http://tracery.io) by GalaxyKate. Check out t
 
 ## How it works
 
-Every day at midnight (EST), the server creates a new schedule for messages the next day, pulling the
+Every day at midnight (EST), the server creates a new schedule for messages for the day, pulling the
 `master` branch from this repository if there is any updates to the rules files, etc.
 
 ### Rules

@@ -1,0 +1,77 @@
+# Toast Me event
+announce_toastme_begin:
+  - "#ping_toastme# It’s Toast Me Monday!! Post a pic in #ch_toastme# and type “Toast Me” for wholesome comments. Be sure to respond to other Toasts as well! You get 200 cake for participating. The event will last 12 hours. Happy toasting!"
+
+announce_toastme_end:
+  - Toast Me has ended. Cake will be awarded shortly. Thank you for participating and see you next Monday for Toast Me!!
+
+
+# Cognitive Reframing Event
+announce_reframing_begin:
+  - |
+    Hey #ping_reframing#, it's time for some Cognitive Reframing!
+
+    If you have a negative thought, head over to #ch_reframing# and reframe it to be a more constructive thought! Using this process can help you break through the negative mental filters that we sometimes apply.
+
+    All the people who participate will get 250 :cake:
+
+    This event will last 12h. Remember to think positive!
+
+announce_reframing_end:
+  - "#ping_reframing# the event has ended, if you participated you will receive your cake shortly, hope you were able to get a productive reframing!"
+
+mark_reframing_begin:
+  - "Reframing event starts now\n-------------------------------"
+
+mark_reframing_end:
+  - Reframing event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
+
+# Gratitude Event
+announce_gratitude_begin:
+  - |
+    Hey #ping_gratitude#, today is Gratitude Tuesday! Between 6am EST - 6pm EST, head on over to #ch_gratitude# and post something/ping someone that you're grateful for!
+
+    Each participant will receive 250 :cake: sometime after the event ends.
+
+announce_gratitude_end:
+  - "#ping_gratitude#, the event has ended, if you participated you will receive your cake shortly, hope you were able to spread some gratitude!"
+
+mark_gratitude_begin:
+  - "Gratitude event starts now\n--------------------------"
+
+mark_gratitude_end:
+  - Gratitude event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
+
+# Creativity Event
+announce_creativity_begin:
+  - |
+    Hey #ping_creativity#, today is Creative Thursday! Between 6am EST - 6pm EST, head on over to #ch_creativity# and post a piece of artwork or another creation you made!
+
+    Each participant will receive 250 :cake: sometime after the event ends.
+
+announce_creativity_end:
+  - "#ping_creativity#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share some of your creativity and projects with others!"
+
+mark_creativity_begin:
+  - "Creativity event starts now\n--------------------------"
+
+mark_creativity_end:
+  - Creativity event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
+# Achievements Event
+announce_achievements_begin:
+  - |
+    Hey #ping_achievements, today is Achievement Friday! Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!
+
+    Each participant will receive 250 :cake: sometime after the event ends.
+
+announce_achievements_end:
+  - "#ping_achievements#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share your achievements!"
+
+mark_achievements_begin:
+  - "Achievement event starts now\n--------------------------"
+
+mark_achievements_end:
+  - Achievement event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
