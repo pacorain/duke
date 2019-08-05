@@ -12,3 +12,17 @@
     days:
       - Saturday
     time: "19:00"
+- message: "#staff_meeting_happening_now#"
+  webhook: staff_announcements
+  schedule:
+    type: weekly
+    days:
+      - Saturday
+    time: "19:15"
+- message: "#staff_meeting_1d_reminder#"
+  webhook: staff_announcements
+  schedule:
+    type: weekly
+    days:
+      - Friday
+    time: "19:00"

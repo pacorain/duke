@@ -3,3 +3,9 @@ admin_meeting_15m_reminder:
 
 staff_meeting_15m_reminder:
   - "#staffserver_support# #staffserver_mod# #staffserver_tech# #staffserver_admin#, this is a reminder that our weekly staff meeting is going to begin in 15 minutes. If you're unable to show up, please let one of the admins know ASAP."
+
+staff_meeting_1d_reminder:
+  - "Hey #staffserver_support# #staffserver_mod# #staffserver_tech# #staffserver_admin#, this is your reminder that our weekly staff meeting is happening tomorrow at 7:15PM EST, in Open Team Meeting. Please let us know if you cannot make the meeting. Thank you"
+
+staff_meeting_happening_now:
+  - "Hey #staffserver_support# #staffserver_mod# #staffserver_tech# #staffserver_admin#, the weekly meeting is starting. If you aren't already in Public team meeting, please join in"
