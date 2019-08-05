@@ -75,3 +75,33 @@
     days:
       - Tuesday
     time: "18:00"
+
+# Creativity
+- message: "#announce_creativity_begin#"
+  webhook: announcements
+  schedule:
+    type: weekly
+    days:
+      - Thursday
+    time: "06:00"
+- message: "#announce_creativity_end#"
+  webhook: announcements
+  schedule:
+    type: weekly
+    days:
+      - Thursday
+    time: "18:00"
+- message: "#mark_creativity_begin#"
+  webhook: creativity
+  schedule:
+    type: weekly
+    days:
+      - Thursday
+    time: "06:00"
+- message: "#mark_creativity_end#"
+  webhook: creativity
+  schedule:
+    type: weekly
+    days:
+      - Thursday
+    time: "18:00"

@@ -42,3 +42,20 @@ mark_gratitude_begin:
 
 mark_gratitude_end:
   - Gratitude event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
+
+# Creativity Event
+announce_creativity_begin:
+  - |
+    Hey #ping_creativity#, today is Creative Thursday! Between 6am EST - 6pm EST, head on over to #ch_creativity# and post a piece of artwork or another creation you made!
+
+    Each participant will receive 250 :cake: sometime after the event ends.
+
+announce_creativity_end:
+  - "#ping_creativity#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share some of your creativity and projects with others!"
+
+mark_creativity_begin:
+  - "Creativity event starts now\n--------------------------"
+
+mark_creativity_end:
+  - Creativity event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!

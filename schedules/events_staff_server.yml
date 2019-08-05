@@ -21,3 +21,11 @@
     days:
       - Tuesday
     time: "18:00"
+
+- message: "#staff_event_creativity#"
+  webhook: staff_mod_chat
+  schedule:
+    type: weekly
+    days:
+      - Thursday
+    time: "18:00"
