@@ -1,3 +1,4 @@
+# Toast Me
 - message: "#announce_toastme_begin#"
   webhook: announcements
   schedule:
@@ -12,6 +13,9 @@
     days:
       - Monday
     time: "18:00"
+
+
+# Reframing
 - message: "#announce_reframing_begin#"
   webhook: announcements
   schedule:
@@ -39,4 +43,35 @@
     type: weekly
     days:
       - Wednesday
+    time: "18:00"
+
+
+# Gratitude
+- message: "#announce_gratitude_begin#"
+  webhook: announcements
+  schedule:
+    type: weekly
+    days:
+      - Tuesday
+    time: "06:00"
+- message: "#announce_gratitude_end#"
+  webhook: announcements
+  schedule:
+    type: weekly
+    days:
+      - Tuesday
+    time: "18:00"
+- message: "#mark_gratitude_begin#"
+  webhook: gratitude
+  schedule:
+    type: weekly
+    days:
+      - Tuesday
+    time: "06:00"
+- message: "#mark_gratitude_end#"
+  webhook: gratitude
+  schedule:
+    type: weekly
+    days:
+      - Tuesday
     time: "18:00"

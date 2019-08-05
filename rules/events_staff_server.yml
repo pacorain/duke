@@ -3,3 +3,6 @@ staff_event_toastme:
 
 staff_event_reframing:
   - "Hey #staffserver_mod# team! The Reframing event is now over! Please collect all the IDs from #ch_reframing# - then put them in #ch_cake_disp# and ping an Admin."
+
+staff_event_gratitude:
+  - "Hey #staffserver_mod# team! The Gratitude event is now over! Please collect all the IDs from #ch_gratitude# - then put them in #ch_cake_disp# and ping an Admin."

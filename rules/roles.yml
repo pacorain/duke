@@ -1,12 +1,25 @@
+
+# Event Roles
 ping_toastme:
   - <@&550319320656379929>
+
 ping_reframing:
   - <@&595281156505600016>
+
+ping_gratitude:
+  - <@&602195861362966539>
+
+
+# Roles on staff server
+# (Each role has its own role ID per server)
 staffserver_mod:
   - <@&598470744875466772>
+
 staffserver_admin:
   - <@&598470727318110219>
+
 staffserver_tech:
   - <@&598470789099945994>
+
 staffserver_support:
   - <@&598470760603975680>
