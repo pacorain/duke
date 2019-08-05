@@ -12,6 +12,9 @@ ping_gratitude:
 ping_creativity:
   - <@&602197001769058334>
 
+ping_achievements:
+  - <@&602196902452133928>
+
 
 # Roles on staff server
 # (Each role has its own role ID per server)

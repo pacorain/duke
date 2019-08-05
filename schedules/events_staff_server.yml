@@ -29,3 +29,11 @@
     days:
       - Thursday
     time: "18:00"
+
+- message: "#staff_event_achievements#"
+  webhook: staff_mod_chat
+  schedule:
+    type: weekly
+    days:
+      - Friday
+    time: "18:00"
