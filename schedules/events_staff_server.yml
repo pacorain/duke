@@ -5,10 +5,19 @@
     days:
       - Monday
     time: "18:00"
+
 - message: "#staff_event_reframing#"
   webhook: staff_mod_chat
   schedule:
     type: weekly
     days:
       - Wednesday
+    time: "18:00"
+
+- message: "#staff_event_gratitude#"
+  webhook: staff_mod_chat
+  schedule:
+    type: weekly
+    days:
+      - Tuesday
     time: "18:00"
