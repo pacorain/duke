@@ -1,32 +1,21 @@
-import os
-import requests
-import socket
-from datetime import datetime
-
 from houseofmisfits import MessageScheduler
+import logging
 
+logger = logging.getLogger(__name__)
 
 class Chatbot:
     def __init__(self):
-        self.send_initial_message()
+        logger.debug("Initializing webhooks bot")
         self.scheduler = MessageScheduler()
         self.scheduler.refresh()
-
-    def send_initial_message(self):
-        """
-        Send a test message to demonstrate that the server is working.
-        """
-        webhook_url = os.getenv('SYS_WEBHOOK_URL')
-        message = "Webhook successfully started on " + socket.gethostname() + " at " + datetime.now().isoformat()
-
-        payload = {"content": message}
-
-        req = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'})
-        print(req.content)
+        self.i = 0
 
     def eval(self):
         """
         Check for any pending actions and perform them.
         """
         self.scheduler.run_pending()
+        self.i += 1
+        if self.i >= 15:
+            raise OSError("Example error: this is what happens when a wrench gets thrown into things.")
 

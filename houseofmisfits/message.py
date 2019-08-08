@@ -7,6 +7,8 @@ from tracery.modifiers import base_english
 import logging
 logger = logging.getLogger(__name__)
 
+logging.getLogger("requests").setLevel(logging.WARNING)
+
 
 class Message:
     def __init__(self, webhook_name: str, message: str, rules: dict, scheduled_time: datetime.datetime):
@@ -48,7 +50,6 @@ class Message:
         logger.debug("Message sent to {} with status code {}. Response: {}".format(
             self.webhook_name, req.status_code, req.content))
 
-
     def _get_webhook_url(self):
         """
         Gets the appropriate Discord webhook URL from webhooks.yaml
@@ -56,7 +57,9 @@ class Message:
         webhooks_path = os.getenv('WORKSPACE') + '/webhooks.yml'
         with open(webhooks_path, 'r') as webhooks_file:
             all_webhooks = yaml.safe_load(webhooks_file)
-        return all_webhooks[self.webhook_name]
+        webhook = all_webhooks[self.webhook_name]
+        logger.debug('Loaded webhook {} successfully'.format(self.webhook_name))
+        return webhook
 
     class AlreadySentException(Exception):
         pass
