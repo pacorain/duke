@@ -7,3 +7,9 @@ achievements: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
 staff_announcements: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
 staff_mod_chat: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
 staff_admin_chat: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
+
+logging_debug: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
+logging_info: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
+logging_warning: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
+logging_error: "https://discordapp.com/api/webhooks/1234567890/asdfghjkl"
+logging_mention_roleid: 12345

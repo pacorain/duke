@@ -26,7 +26,7 @@ class MessageScheduler:
         self.messages = []
         self.date = date.today()
         self.rules = MessageScheduler.load_rules()
-        logger.debug("Loaded rules, {} rules total".format(len(self.rules)))
+        logger.info("Loaded rules, {} rules total".format(len(self.rules)))
 
     def run_pending(self):
         tz = timezone('US/Eastern')
@@ -41,10 +41,11 @@ class MessageScheduler:
                 logger.debug("{} messages left to send".format(len(self.messages)))
 
     def refresh(self):
-        logger.debug("Loading new schedules for {}".format(date.today().isoformat()))
+        logger.info("Loading new schedules for {}".format(date.today().isoformat()))
         for scheduled_message in MessageScheduler.load_schedules():
             schedule_type = scheduled_message['schedule']['type']
             if schedule_type == 'hourly':
+                logger.debug('Message {}: detected hourly schedule'.format(scheduled_message['message']))
                 self.schedule_hourly(scheduled_message)
             elif schedule_type == 'weekly':
                 self.schedule_weekly(scheduled_message)
@@ -56,6 +57,7 @@ class MessageScheduler:
         logger.info("All messages added, {} messages in total".format(len(self.messages)))
 
     def schedule_hourly(self, message):
+        logger.debug('Setting message {} to hourly schedule'.format(message['message']))
         tz = timezone('US/Eastern')
         start_time = datetime.combine(date.today(), time(0, 0, 0), tzinfo=tz)
         interval = message['schedule']['interval']
@@ -63,11 +65,13 @@ class MessageScheduler:
         unflat_text = message['message']
         for message_time in (start_time + timedelta(hours=n) for n in range(0, 24, interval)):
             if datetime.now(tz=tz) > message_time:
+                logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
                 continue
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
 
     def schedule_minutely(self, message):
+        logger.debug('Setting message {} to minutely schedule'.format(message['message']))
         tz = timezone('US/Eastern')
         start_time = datetime.combine(date.today(), time(0, 0, 0), tzinfo=tz)
         interval = message['schedule']['interval']
@@ -75,6 +79,7 @@ class MessageScheduler:
         unflat_text = message['message']
         for message_time in (start_time + timedelta(minutes=n) for n in range(0, 1440, interval)):
             if datetime.now(tz=tz) > message_time:
+                logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
                 continue
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
@@ -90,10 +95,13 @@ class MessageScheduler:
             tm = time(int(h), int(m))
             message_time = datetime.combine(dt, tm, tzinfo=tz)
             if datetime.now(tz=tz) > message_time + timedelta(minutes=15):
-                # Don't schedule the message -- it's already too late
+                logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
                 return
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
+        else:
+            logger.debug('Skipping message {}: {} not in {}'.format(
+                unflat_text, day_of_week, str(message['schedule']['days'])))
 
     @staticmethod
     def load_rules():
