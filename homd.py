@@ -19,7 +19,7 @@ class HouseOfMisfitsDaemon(Daemon):
             while True:
                 chatbot.eval()
                 time.sleep(1)
-        except Exception as e:
+        except:
             logger.critical("Something happened and the webhooks daemon is shutting down.\n", exc_info=True)
 
     @staticmethod
@@ -28,7 +28,8 @@ class HouseOfMisfitsDaemon(Daemon):
         # TODO: Set logging level dynamically
         logger.setLevel(logging.DEBUG)
         critical_url = os.getenv('SYS_WEBHOOK_URL')
-        with open('webhooks.yml', 'r') as webhooks_file:
+        workspace_dir = os.getenv('WORKSPACE')
+        with open(workspace_dir + '/webhooks.yml', 'r') as webhooks_file:
             wh = yaml.safe_load(webhooks_file)
         urls = [
             wh['logging_debug'],
