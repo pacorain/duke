@@ -37,6 +37,7 @@ class HouseOfMisfitsDaemon(Daemon):
             wh['logging_error'],
             critical_url
         ]
+        urls.remove(None)
         h = DiscordLoggingHandler(urls)
         h.setMention(wh['logging_mention_roleid'], logging.ERROR)
         logger.addHandler(h)
