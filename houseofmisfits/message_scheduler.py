@@ -28,6 +28,32 @@ class MessageScheduler:
         self.rules = MessageScheduler.load_rules()
         logger.info("Loaded rules, {} rules total".format(len(self.rules)))
 
+    @staticmethod
+    def simulate_week():
+        """
+        Grabs the message for the next 7 days (starting from tomorrow)
+        """
+        m = MessageScheduler()
+        content = '<html>'
+        for day in (date.today() + timedelta(days=n) for n in range(1, 8)):
+            m.date = day
+            m.refresh(False)
+            content += "<h1>Potential messages for {}</h1>".format(day.strftime('%a %m/%d'))
+            content += "<table><tr><td>Webhook</td><td>Time</td><td>Message</td></tr>"
+            messages = sorted(m.messages, key=lambda x: x.scheduled_time)
+            for message in messages:
+                content += "<tr><td><b>{}</b></td><td><b>{}</b></td><td>{}</td></tr>".format(
+                    message.webhook_name,
+                    message.scheduled_time.strftime('%H:%M'),
+                    message.message
+                )
+            content += "</table>"
+        content += "</html>"
+
+        debug_output_path = os.getenv('WORKSPACE') + '/output.html'
+        with open(debug_output_path, 'w') as html_file:
+            html_file.write(content)
+
     def run_pending(self):
         tz = timezone('US/Eastern')
         if date.today() > self.date:
@@ -40,12 +66,12 @@ class MessageScheduler:
                 self.messages.remove(message)
                 logger.debug("{} messages left to send".format(len(self.messages)))
 
-    def refresh(self):
-        logger.info("Loading new schedules for {}".format(date.today().isoformat()))
+    def refresh(self, set_date=True):
+        logger.info("Loading new schedules for {}".format(self.date.isoformat()))
+        self.messages.clear()
         for scheduled_message in MessageScheduler.load_schedules():
             schedule_type = scheduled_message['schedule']['type']
             if schedule_type == 'hourly':
-                logger.debug('Message {}: detected hourly schedule'.format(scheduled_message['message']))
                 self.schedule_hourly(scheduled_message)
             elif schedule_type == 'weekly':
                 self.schedule_weekly(scheduled_message)
@@ -53,13 +79,14 @@ class MessageScheduler:
                 self.schedule_minutely(scheduled_message)
             else:
                 raise KeyError(schedule_type)
-        self.date = date.today()
+        if set_date:
+            self.date = date.today()
         logger.info("All messages added, {} messages in total".format(len(self.messages)))
 
     def schedule_hourly(self, message):
         logger.debug('Setting message {} to hourly schedule'.format(message['message']))
         tz = timezone('US/Eastern')
-        start_time = datetime.combine(date.today(), time(0, 0, 0), tzinfo=tz)
+        start_time = datetime.combine(self.date, time(0, 0, 0), tzinfo=tz)
         interval = message['schedule']['interval']
         webhook = message['webhook']
         unflat_text = message['message']
@@ -73,7 +100,7 @@ class MessageScheduler:
     def schedule_minutely(self, message):
         logger.debug('Setting message {} to minutely schedule'.format(message['message']))
         tz = timezone('US/Eastern')
-        start_time = datetime.combine(date.today(), time(0, 0, 0), tzinfo=tz)
+        start_time = datetime.combine(self.date, time(0, 0, 0), tzinfo=tz)
         interval = message['schedule']['interval']
         webhook = message['webhook']
         unflat_text = message['message']
@@ -86,11 +113,11 @@ class MessageScheduler:
 
     def schedule_weekly(self, message):
         tz = timezone('US/Eastern')
-        day_of_week = weekdays[date.today().weekday()]
+        day_of_week = weekdays[self.date.weekday()]
         webhook = message['webhook']
         unflat_text = message['message']
         if day_of_week in message['schedule']['days']:
-            dt = date.today()
+            dt = self.date
             h, m = message['schedule']['time'].split(':')
             tm = time(int(h), int(m))
             message_time = datetime.combine(dt, tm, tzinfo=tz)
@@ -99,9 +126,6 @@ class MessageScheduler:
                 return
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
-        else:
-            logger.debug('Skipping message {}: {} not in {}'.format(
-                unflat_text, day_of_week, str(message['schedule']['days'])))
 
     @staticmethod
     def load_rules():

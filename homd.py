@@ -7,7 +7,7 @@ import logging
 import yaml
 
 from daemon import Daemon
-from houseofmisfits import Chatbot, DiscordLoggingHandler
+from houseofmisfits import Chatbot, DiscordLoggingHandler, MessageScheduler
 
 
 class HouseOfMisfitsDaemon(Daemon):
@@ -23,10 +23,16 @@ class HouseOfMisfitsDaemon(Daemon):
             logger.critical("Something happened and the webhooks daemon is shutting down.\n", exc_info=True)
 
     @staticmethod
+    def debug():
+        logger = HouseOfMisfitsDaemon.configure_discord_logging()
+        logger.info("Simulating new week in debugging branch.")
+        MessageScheduler.simulate_week()
+
+    @staticmethod
     def configure_discord_logging():
         logger = logging.getLogger()
         # TODO: Set logging level dynamically
-        logger.setLevel(logging.DEBUG)
+        logger.setLevel(logging.WARNING)
         critical_url = os.getenv('SYS_WEBHOOK_URL')
         workspace_dir = os.getenv('WORKSPACE')
         with open(workspace_dir + '/webhooks.yml', 'r') as webhooks_file:
@@ -55,6 +61,8 @@ if __name__ == "__main__":
             daemon.restart()
         elif 'fg' == sys.argv[1]:
             daemon.run()
+        elif 'debug' == sys.argv[1]:
+            HouseOfMisfitsDaemon.debug()
         else:
             print("Unknown command")
             sys.exit(2)

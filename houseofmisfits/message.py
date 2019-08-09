@@ -50,6 +50,9 @@ class Message:
         logger.debug("Message sent to {} with status code {}. Response: {}".format(
             self.webhook_name, req.status_code, req.content))
 
+    def describe(self):
+        return "`{}` - `{}`\n{}".format(self.scheduled_time.isoformat(), self.webhook_name, self.message)
+
     def _get_webhook_url(self):
         """
         Gets the appropriate Discord webhook URL from webhooks.yaml
