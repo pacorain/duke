@@ -63,7 +63,7 @@ mark_creativity_end:
 # Achievements Event
 announce_achievements_begin:
   - |
-    Hey #ping_achievements, today is Achievement Friday! Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!
+    Hey #ping_achievements#, today is Achievement Friday! Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!
 
     Each participant will receive 250 :cake: sometime after the event ends.
 
