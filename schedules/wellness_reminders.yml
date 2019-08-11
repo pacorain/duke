@@ -14,7 +14,6 @@
       - Thursday
       - Sunday
     time: "18:00"
-- message: "#wellness_rem
 - message: "#wellness_reminder#"
   webhook: aspen_general
   schedule:
