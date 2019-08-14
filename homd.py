@@ -32,7 +32,7 @@ class HouseOfMisfitsDaemon(Daemon):
     def configure_discord_logging():
         logger = logging.getLogger()
         # TODO: Set logging level dynamically
-        logger.setLevel(logging.WARNING)
+        logger.setLevel(logging.INFO)
         critical_url = os.getenv('SYS_WEBHOOK_URL')
         workspace_dir = os.getenv('WORKSPACE')
         with open(workspace_dir + '/webhooks.yml', 'r') as webhooks_file:
