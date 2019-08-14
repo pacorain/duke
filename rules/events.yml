@@ -1,6 +1,6 @@
 # Toast Me event
 announce_toastme_begin:
-  - "#ping_toastme# It’s Toast Me Monday!! Post a pic in #ch_toastme# and type “Toast Me” for wholesome comments. Be sure to respond to other Toasts as well! You get 200 cake for participating. The event will last 12 hours. Happy toasting!"
+  - "#ping_toastme# It’s Toast Me Monday!! Post a pic in #ch_toastme# and type “Toast Me” for wholesome comments. Be sure to respond to other Toasts as well! You get 250 cake for participating. The event will last 12 hours. Happy toasting!"
 
 announce_toastme_end:
   - Toast Me has ended. Cake will be awarded shortly. Thank you for participating and see you next Monday for Toast Me!!
