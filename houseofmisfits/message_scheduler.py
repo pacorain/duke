@@ -55,8 +55,8 @@ class MessageScheduler:
 
     def run_pending(self):
         if date.today() > self.date:
-            self.refresh()
             self.date = date.today()
+            self.refresh()
         for message in self.messages:
             if datetime.now() >= message.scheduled_time:
                 logger.info("Sending message with {}: {}".format(message.webhook_name, message.message))
