@@ -1,2 +1,14 @@
 staff_event_cake_reminder:
-  - "Hey #staffserver_mod# team! #var_event# is now over! Please collect all the IDs from #var_ch# - then put them in #ch_cake_disp# and ping an Admin."
+  - "#[role_to_ping:#staffserver_mod#]ping_role# #var_event# #ended# #collect#"
+
+ping_role:
+  - "Hey #role_to_ping# team!"
+
+ended:
+  - "is now #synonym_over#."
+
+synonym_over:
+  - over
+
+collect:
+  - "Please collect all the IDs from #var_ch# - then put them in #ch_cake_disp# and ping an Admin."
