@@ -1,7 +1,0 @@
-- message: "#admin_meeting_15m_reminder#"
-  webhook: staff_admin_chat
-  schedule:
-    type: weekly
-    days:
-      - Friday
-    time: "19:45"
