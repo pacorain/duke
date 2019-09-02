@@ -59,7 +59,7 @@ class MessageScheduler:
             self.refresh()
         for message in self.messages:
             if datetime.now() >= message.scheduled_time:
-                logger.info("Sending message with {}: {}".format(message.webhook_name, message.message))
+                logger.info("Sending message with {}: \n\n```\n{}\n```".format(message.webhook_name, message.message))
                 message.send()
                 self.messages.remove(message)
                 logger.debug("{} messages left to send".format(len(self.messages)))
