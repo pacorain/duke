@@ -10,8 +10,9 @@ wellness_classic:
   - You matter a lot and your mental health is important. Make sure you take care of yourself, even when that involves doing things you don't want to do.
 
 wellness_dynamic:
-  - "#[var_do:#water_do#][var_noun:#water_noun#][var_protip:#water_protip#]wellness_sentence#"
-  - "#[var_do:#meds_do#][var_noun:#meds_noun#][var_protip:#meds_protip#]wellness_sentence#"
+  - "#[var_do:#water_do#][var_done:#water_done#][var_noun:#water_noun#][var_protip:#water_protip#]wellness_sentence#"
+  - "#[var_do:#meds_do#][var_done:#meds_done#][var_noun:#meds_noun#][var_protip:#meds_protip#]wellness_sentence#"
+  - "#[var_do:#exercise_do#][var_done:#exercise_done#][var_noun:#exercise_noun#][var_protip:#exercise_protip#]wellness_sentence#"
 
 wellness_sentence:
   - "Make sure you #var_do# today! #casual_reminder_outro#"
@@ -19,6 +20,7 @@ wellness_sentence:
   - "Don't forget about #var_noun#!"
   - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_protip#."
   - "Remember: #var_noun# is important. If it helps, you can try and #var_protip#."
+  - "Have you #var_done# #syn_recently#? Make sure you take care of yourself and #var_do#."
 
 
 water_do:
@@ -33,6 +35,14 @@ water_do:
   - keep your body hydrated
   - get plenty to eat and drink
   - take care of your body
+
+water_done:
+  - drunk enough water
+  - had enough water
+  - had any water
+  - had enough to drink
+  - kept yourself hydrated
+  - made sure to get pleny to eat and drink
 
 water_noun:
   - water
@@ -56,6 +66,14 @@ meds_do:
   - follow your prescriptons
   - keep up with your mental health habits
 
+meds_have:
+  - taken your meds
+  - taken your pills
+  - taken all your vitamins
+  - remembered to take your prescriptions
+  - kept up with your prescriptions
+  - kept up with all your mental health habits
+
 meds_noun:
   - your daily pills
   - your prescriptions
@@ -70,3 +88,35 @@ meds_protip:
   - pretend your medications are health potions before you embark on your daily quest
   - have someone close to you ask you about them every day
   - set a reminder on your phone
+
+
+exercise_do:
+  - move around
+  - stand up and move around
+  - stretch your muscles
+  - get some fresh air
+  - go outside
+  - take a walk
+
+exercise_have:
+  - gone outside
+  - moved around
+  - streched your muscles
+  - gone anywhere
+  - gotten any fresh air
+  - taken a break
+
+exercise_noun:
+  - moving your body
+  - stretching your muscles
+  - exercising
+  - stepping away from your phone and computer
+  - the outdoors
+  - taking breaks
+  - staying active
+  - activity
+
+exercise_protip:
+  - grab some headphones and hang out in voice chat while you move around
+  - do just a quick exercise, like jumping jacks or curls, to get your blood pumping
+  - set a timer
