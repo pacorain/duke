@@ -9,20 +9,35 @@ wellness_classic:
   - Get up and do a little exercise. Stretch, go for a 10-minute walk, do some jumping jacks - get your blood pumping. A little goes a long way. The server will still be here when you come back.
 
 wellness_dynamic:
-  - "#[var_do:#water_do#][var_noun:#water_noun#]wellness_sentence#"
+  - "#[var_do:#water_do#][var_noun:#water_noun#][var_protip:#water_protip#]wellness_sentence#"
 
 wellness_sentence:
   - "Make sure you #var_do# today! #casual_reminder_outro#"
   - "Don't forget to #var_do#! #var_noun.capitalize# is very important for your health."
   - "Don't forget about #var_do#!"
+  - "Make sure to #var_do#! If you hate #var_noun#, you can #var_protip#"
 
 water_do:
   - drink some water
   - drink enough water throughout your day
   - get plenty to drink
+  - stay hydrated
+  - hydrate
+  - get something to drink
+  - "`I N G E S T   H 2 O`"
+  - drink water
+  - keep your body hydrated
 
 water_noun:
   - water
   - getting at least 8 cups of water
   - hydration
   - your water intake
+  - drinking enough water
+  - getting enough to drink
+
+water_protip:
+  - download an app that helps you keep track of your water intake
+  - add fruit or flavor enhancer to your water
+  - get a larger water bottle and set a goal to drink all of it each day
+
