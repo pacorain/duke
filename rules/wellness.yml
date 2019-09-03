@@ -20,6 +20,7 @@ wellness_sentence:
   - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_protip#."
   - "Remember: #var_noun# is important. If it helps, you can try and #var_protip#."
 
+
 water_do:
   - drink some water
   - drink enough water throughout your day
@@ -46,6 +47,7 @@ water_protip:
   - add fruit or flavor enhancer to your water
   - get a larger water bottle and set a goal to drink all of it each day
   - set a reminder on your phone
+
 
 meds_do:
   - take your meds
