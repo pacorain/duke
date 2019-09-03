@@ -1,4 +1,4 @@
-- message: "#wellness_reminder#"
+- message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
     type: weekly
@@ -6,7 +6,7 @@
       - Monday
       - Friday
     time: "09:00"
-- message: "#wellness_reminder#"
+- message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
     type: weekly
@@ -14,7 +14,7 @@
       - Thursday
       - Sunday
     time: "18:00"
-- message: "#wellness_reminder#"
+- message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
     type: weekly
@@ -27,7 +27,7 @@
       - Thursday
       - Friday
     time: "14:00"
-- message: "#wellness_reminder#"
+- message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
     type: weekly
@@ -40,7 +40,7 @@
       - Thursday
       - Friday
     time: "16:30"
-- message: "#wellness_reminder#"
+- message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
     type: weekly
@@ -53,7 +53,7 @@
       - Thursday
       - Friday
     time: "08:45"
-- message: "#wellness_reminder#"
+- message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
     type: weekly
@@ -66,7 +66,7 @@
       - Thursday
       - Friday
     time: "14:30"
-- message: "#wellness_reminder#"
+- message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
     type: weekly
