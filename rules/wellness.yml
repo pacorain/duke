@@ -7,15 +7,18 @@ wellness_classic:
   - Your reminder to drink water! If you hate water, put some fruit in it or add a splash of juice or water flavorer.
   - Do you take vitamins or supplements for your health? Don't forget to take them today and keep your body healthy.
   - Get up and do a little exercise. Stretch, go for a 10-minute walk, do some jumping jacks - get your blood pumping. A little goes a long way. The server will still be here when you come back.
+  - You matter a lot and your mental health is important. Make sure you take care of yourself, even when that involves doing things you don't want to do.
 
 wellness_dynamic:
   - "#[var_do:#water_do#][var_noun:#water_noun#][var_protip:#water_protip#]wellness_sentence#"
+  - "#[var_do:#meds_do#][var_noun:#meds_noun#][var_protip:#meds_protip#]wellness_sentence#"
 
 wellness_sentence:
   - "Make sure you #var_do# today! #casual_reminder_outro#"
   - "Don't forget to #var_do#! #var_noun.capitalize# is very important for your health."
-  - "Don't forget about #var_do#!"
-  - "Make sure to #var_do#! If you hate #var_noun#, you can #var_protip#"
+  - "Don't forget about #var_noun#!"
+  - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_protip#."
+  - "Remember: #var_noun# is important. If it helps, you can try and #var_protip#."
 
 water_do:
   - drink some water
@@ -27,6 +30,8 @@ water_do:
   - "`I N G E S T   H 2 O`"
   - drink water
   - keep your body hydrated
+  - get plenty to eat and drink
+  - take care of your body
 
 water_noun:
   - water
@@ -40,4 +45,26 @@ water_protip:
   - download an app that helps you keep track of your water intake
   - add fruit or flavor enhancer to your water
   - get a larger water bottle and set a goal to drink all of it each day
+  - set a reminder on your phone
 
+meds_do:
+  - take your meds
+  - take medication
+  - take your daily vitamins and supplements
+  - follow your prescriptons
+  - keep up with your mental health habits
+
+meds_noun:
+  - your daily pills
+  - your prescriptions
+  - meds
+  - medication
+  - vitamins
+  - vitamins and supplements
+  - taking your prescribed medication
+
+meds_protip:
+  - use a daily pill container to keep track
+  - pretend your medications are health potions before you embark on your daily quest
+  - have someone close to you ask you about them every day
+  - set a reminder on your phone
