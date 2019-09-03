@@ -1,4 +1,7 @@
 wellness:
+  - "#wellness_classic#"
+
+wellness_classic:
   - "#casual_reminder_intro# Everybody take a minute to drink a glass of water. That's all. And if you forgot to take your meds today, this is your reminder."
   - Your reminder to drink water! If you hate water, put some fruit in it or add a splash of juice or water flavorer.
   - Do you take vitamins or supplements for your health? Don't forget to take them today and keep your body healthy.
