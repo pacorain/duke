@@ -23,7 +23,7 @@ wellness_sentence:
   - "Remember: #var_noun# is important. If it helps, you can try and #var_protip#."
   - "Have you #var_done# #syn_recently#? Make sure you take care of yourself and #var_do#."
   - "Take some time to #var_do# today. You might feel better after you've #var_done#."
-  - "#var_do.capitalize#.
+  - "#var_do.capitalize#"
 
 
 water_do:
