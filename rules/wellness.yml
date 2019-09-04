@@ -13,6 +13,7 @@ wellness_dynamic:
   - "#[var_do:#water_do#][var_done:#water_done#][var_noun:#water_noun#][var_protip:#water_protip#]wellness_sentence#"
   - "#[var_do:#meds_do#][var_done:#meds_done#][var_noun:#meds_noun#][var_protip:#meds_protip#]wellness_sentence#"
   - "#[var_do:#exercise_do#][var_done:#exercise_done#][var_noun:#exercise_noun#][var_protip:#exercise_protip#]wellness_sentence#"
+  - "#[var_do:#breathe_do#][var_done:#breathe_done#][var_noun:#breathe_noun#][var_protip:#breathe_protip#]wellness_sentence#"
 
 wellness_sentence:
   - "Make sure you #var_do# today! #casual_reminder_outro#"
@@ -21,6 +22,8 @@ wellness_sentence:
   - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_protip#."
   - "Remember: #var_noun# is important. If it helps, you can try and #var_protip#."
   - "Have you #var_done# #syn_recently#? Make sure you take care of yourself and #var_do#."
+  - "Take some time to #var_do# today. You might feel better after you've #var_done#."
+  - "#var_do.capitalize#.
 
 
 water_do:
@@ -66,7 +69,7 @@ meds_do:
   - follow your prescriptons
   - keep up with your mental health habits
 
-meds_have:
+meds_done:
   - taken your meds
   - taken your pills
   - taken all your vitamins
@@ -98,7 +101,7 @@ exercise_do:
   - go outside
   - take a walk
 
-exercise_have:
+exercise_done:
   - gone outside
   - moved around
   - streched your muscles
@@ -119,4 +122,38 @@ exercise_noun:
 exercise_protip:
   - grab some headphones and hang out in voice chat while you move around
   - do just a quick exercise, like jumping jacks or curls, to get your blood pumping
-  - set a timer
+  - set a timer and step away for the length of the timer
+  -
+
+
+breathe_do:
+  - take some deep breaths
+  - breathe
+  - focus on your breathing
+  - be aware of your thoughts
+  - focus on your thinking
+  - notice your posture
+
+breathe_done:
+  - breathed
+  - taken some deep breaths
+  - practiced focusing on your breath
+  - noticed your thoughts
+  - taken a moment to relax
+
+breathe_noun:
+  - your breathing
+  - being aware of how your body and how you are feeling
+  - being aware of your thoughts
+  - being aware of your feelings
+  - self-awareness
+  - taking some time to relax
+  - taking some time to breathe
+  - stepping away for a moment
+  - giving yourself a rest
+
+breathe_protip:
+  - "type `.breathe` in #ch_botspam# to get a helpful animation"
+  - download a meditation app
+  - set a timer for 30 seconds and try to focus on one specific feeling
+  - "take some time to find one negative thought, then try to improve it in #ch_reframing#"
