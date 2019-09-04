@@ -1,9 +1,16 @@
 wellness:
   - "#wellness_classic#"
   - "#wellness_dynamic#"
+  - "#wellness_dynamic#"
+  - "#wellness_dynamic#"
+  - "#wellness_dynamic#"
+  - "#wellness_dynamic#" # put multiple times to make this more likely
 
 wellness_classic:
-  - "#casual_reminder_intro# Everybody take a minute to drink a glass of water. That's all. And if you forgot to take your meds today, this is your reminder."
+  - "#casual_reminder_intro# #wellness_classic#"
+  - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
+  - "#wellness_classic# #casual_reminder_outro#"
+  - Everybody take a minute to drink a glass of water. That's all. And if you forgot to take your meds today, this is your reminder.
   - Your reminder to drink water! If you hate water, put some fruit in it or add a splash of juice or water flavorer.
   - Do you take vitamins or supplements for your health? Don't forget to take them today and keep your body healthy.
   - Get up and do a little exercise. Stretch, go for a 10-minute walk, do some jumping jacks - get your blood pumping. A little goes a long way. The server will still be here when you come back.
@@ -17,13 +24,16 @@ wellness_dynamic:
 
 wellness_sentence:
   - "Make sure you #var_do# today! #casual_reminder_outro#"
-  - "Don't forget to #var_do#! #var_noun.capitalize# is very important for your health."
+  - "#casual_reminder_intro# #wellness_sentence#"
+  - "#wellness_sentence# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #wellness_sentence# #casual_reminder_outro#"
+  - "Don't forget to #var_do#! #var_noun.capitalize# #var_is# very important for your health."
   - "Don't forget about #var_noun#!"
   - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_protip#."
-  - "Remember: #var_noun# is important. If it helps, you can try and #var_protip#."
+  - "Remember: #var_noun# #var_is# important. If it helps, you can try and #var_protip#."
   - "Have you #var_done# #syn_recently#? Make sure you take care of yourself and #var_do#."
   - "Take some time to #var_do# today. You might feel better after you've #var_done#."
-  - "#var_do.capitalize#"
+  - "#var_do.capitalize# every once in a while!"
 
 
 water_do:
@@ -48,12 +58,12 @@ water_done:
   - made sure to get pleny to eat and drink
 
 water_noun:
-  - water
-  - getting at least 8 cups of water
-  - hydration
-  - your water intake
-  - drinking enough water
-  - getting enough to drink
+  - "[var_is:is]water"
+  - "[var_is:is]getting at least 8 cups of water"
+  - "[var_is:is]hydration"
+  - "[var_is:is]your water intake"
+  - "[var_is:is]drinking enough water"
+  - "[var_is:is]getting enough to drink"
 
 water_protip:
   - download an app that helps you keep track of your water intake
@@ -78,13 +88,13 @@ meds_done:
   - kept up with all your mental health habits
 
 meds_noun:
-  - your daily pills
-  - your prescriptions
-  - meds
-  - medication
-  - vitamins
-  - vitamins and supplements
-  - taking your prescribed medication
+  - "[var_is:are]your daily pills"
+  - "[var_is:are]your prescriptions"
+  - "[var_is:are]meds"
+  - "[var_is:is]medication"
+  - "[var_is:are]vitamins"
+  - "[var_is:are]vitamins and supplements"
+  - "[var_is:is]taking your prescribed medication"
 
 meds_protip:
   - use a daily pill container to keep track
@@ -110,24 +120,24 @@ exercise_done:
   - taken a break
 
 exercise_noun:
-  - moving your body
-  - stretching your muscles
-  - exercising
-  - stepping away from your phone and computer
-  - the outdoors
-  - taking breaks
-  - staying active
-  - activity
+  - "[var_is:is]moving your body"
+  - "[var_is:is]stretching your muscles"
+  - "[var_is:is]exercising"
+  - "[var_is:is]stepping away from your phone and computer"
+  - "[var_is:are]the outdoors"
+  - "[var_is:is]taking breaks"
+  - "[var_is:is]staying active"
+  - "[var_is:is]activity"
 
 exercise_protip:
   - grab some headphones and hang out in voice chat while you move around
   - do just a quick exercise, like jumping jacks or curls, to get your blood pumping
-  - set a timer and step away for the length of the timer
-  -
+  - set a timer and try to move around for that time
+  - take the long route the next time you get up to go somewhere
 
 
 breathe_do:
-  - take some deep breaths
+  - practice deep breathing
   - breathe
   - focus on your breathing
   - be aware of your thoughts
@@ -140,17 +150,18 @@ breathe_done:
   - practiced focusing on your breath
   - noticed your thoughts
   - taken a moment to relax
+  - checked your thoughts
 
 breathe_noun:
-  - your breathing
-  - being aware of how your body and how you are feeling
-  - being aware of your thoughts
-  - being aware of your feelings
-  - self-awareness
-  - taking some time to relax
-  - taking some time to breathe
-  - stepping away for a moment
-  - giving yourself a rest
+  - "[var_is:is]your breathing"
+  - "[var_is:is]being aware of how your body and how you are feeling"
+  - "[var_is:is]being aware of your thoughts"
+  - "[var_is:is]being aware of your feelings"
+  - "[var_is:is]self-awareness"
+  - "[var_is:is]taking some time to relax"
+  - "[var_is:is]taking some time to breathe"
+  - "[var_is:is]stepping away for a moment"
+  - "[var_is:is]giving yourself a rest"
 
 breathe_protip:
   - "type `.breathe` in #ch_botspam# to get a helpful animation"
