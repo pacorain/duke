@@ -17,10 +17,10 @@ wellness_classic:
   - You matter a lot and your mental health is important. Make sure you take care of yourself, even when that involves doing things you don't want to do.
 
 wellness_dynamic:
-  - "#[var_do:#water_do#][var_done:#water_done#][var_noun:#water_noun#][var_protip:#water_protip#]wellness_sentence#"
-  - "#[var_do:#meds_do#][var_done:#meds_done#][var_noun:#meds_noun#][var_protip:#meds_protip#]wellness_sentence#"
-  - "#[var_do:#exercise_do#][var_done:#exercise_done#][var_noun:#exercise_noun#][var_protip:#exercise_protip#]wellness_sentence#"
-  - "#[var_do:#breathe_do#][var_done:#breathe_done#][var_noun:#breathe_noun#][var_protip:#breathe_protip#]wellness_sentence#"
+  - "#[var_do:#water_do#][var_done:#water_done#][var_noun:#water_noun#][var_suggestion:#water_suggestion#]wellness_sentence#"
+  - "#[var_do:#meds_do#][var_done:#meds_done#][var_noun:#meds_noun#][var_suggestion:#meds_suggestion#]wellness_sentence#"
+  - "#[var_do:#exercise_do#][var_done:#exercise_done#][var_noun:#exercise_noun#][var_suggestion:#exercise_suggestion#]wellness_sentence#"
+  - "#[var_do:#breathe_do#][var_done:#breathe_done#][var_noun:#breathe_noun#][var_suggestion:#breathe_suggestion#]wellness_sentence#"
 
 wellness_sentence:
   - "Make sure you #var_do# today! #casual_reminder_outro#"
@@ -29,8 +29,8 @@ wellness_sentence:
   - "#casual_reminder_intro# #wellness_sentence# #casual_reminder_outro#"
   - "Don't forget to #var_do#! #var_noun.capitalize# #var_is# very important for your health."
   - "Don't forget about #var_noun#!"
-  - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_protip#."
-  - "Remember: #var_noun# #var_is# important. If it helps, you can try and #var_protip#."
+  - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_suggestion#."
+  - "Remember: #var_noun# #var_is# important. If it helps, you can try and #var_suggestion#."
   - "Have you #var_done# #syn_recently#? Make sure you take care of yourself and #var_do#."
   - "Take some time to #var_do# today. You might feel better after you've #var_done#."
   - "#var_do.capitalize# every once in a while!"
@@ -65,7 +65,7 @@ water_noun:
   - "[var_is:is]drinking enough water"
   - "[var_is:is]getting enough to drink"
 
-water_protip:
+water_suggestion:
   - download an app that helps you keep track of your water intake
   - add fruit or flavor enhancer to your water
   - get a larger water bottle and set a goal to drink all of it each day
@@ -96,7 +96,7 @@ meds_noun:
   - "[var_is:are]vitamins and supplements"
   - "[var_is:is]taking your prescribed medication"
 
-meds_protip:
+meds_suggestion:
   - use a daily pill container to keep track
   - pretend your medications are health potions before you embark on your daily quest
   - have someone close to you ask you about them every day
@@ -129,7 +129,7 @@ exercise_noun:
   - "[var_is:is]staying active"
   - "[var_is:is]activity"
 
-exercise_protip:
+exercise_suggestion:
   - grab some headphones and hang out in voice chat while you move around
   - do just a quick exercise, like jumping jacks or curls, to get your blood pumping
   - set a timer and try to move around for that time
@@ -163,7 +163,7 @@ breathe_noun:
   - "[var_is:is]stepping away for a moment"
   - "[var_is:is]giving yourself a rest"
 
-breathe_protip:
+breathe_suggestion:
   - "type `.breathe` in #ch_botspam# to get a helpful animation"
   - download a meditation app
   - set a timer for 30 seconds and try to focus on one specific feeling
