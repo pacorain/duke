@@ -10,6 +10,9 @@ wellness_classic:
   - "#casual_reminder_intro# #wellness_classic#"
   - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
   - "#wellness_classic# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #wellness_classic#"
+  - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
+  - "#wellness_classic# #casual_reminder_outro#"
   - Everybody take a minute to drink a glass of water. That's all. And if you forgot to take your meds today, this is your reminder.
   - Your reminder to drink water! If you hate water, put some fruit in it or add a splash of juice or water flavorer.
   - Do you take vitamins or supplements for your health? Don't forget to take them today and keep your body healthy.
@@ -23,7 +26,7 @@ wellness_dynamic:
   - "#[var_do:#breathe_do#][var_done:#breathe_done#][var_noun:#breathe_noun#][var_suggestion:#breathe_suggestion#]wellness_sentence#"
 
 wellness_sentence:
-  - "Make sure you #var_do# today! #casual_reminder_outro#"
+  - "Make sure you #var_do# every once in a while!"
   - "#casual_reminder_intro# #wellness_sentence#"
   - "#wellness_sentence# #casual_reminder_outro#"
   - "#casual_reminder_intro# #wellness_sentence# #casual_reminder_outro#"
@@ -33,7 +36,7 @@ wellness_sentence:
   - "Remember: #var_noun# #var_is# important. If it helps, you can try and #var_suggestion#."
   - "Have you #var_done# #syn_recently#? Make sure you take care of yourself and #var_do#."
   - "Take some time to #var_do# today. You might feel better after you've #var_done#."
-  - "#var_do.capitalize# every once in a while!"
+  - "#var_do.capitalize# today!"
 
 
 water_do:
@@ -115,7 +118,7 @@ exercise_done:
   - gone outside
   - moved around
   - streched your muscles
-  - gone anywhere
+  - gone somewhere
   - gotten any fresh air
   - taken a break
 
