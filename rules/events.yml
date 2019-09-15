@@ -52,10 +52,16 @@ mark_reframing_end:
 
 # Gratitude Event
 announce_gratitude_begin:
-  - |
-    Hey #ping_gratitude#, today is Gratitude Tuesday! Between 6am EST - 6pm EST, head on over to #ch_gratitude# and post something/ping someone that you're grateful for!
+  - "#[event_name:Gratitude][event_ping:#ping_gratitude#][day_of_week:Wednesday][event_instructions:#gratitude_instructions#][event_doing:#gratitude_doing#][event_outro:#gratitude_outro#]announce_event_begin#"
 
-    Each participant will receive 250 :cake: sometime after the event ends.
+gratitude_instructions:
+  - "Between 6am EST - 6pm EST, head on over to #ch_gratitude# and post something/ping someone that you're grateful for!"
+
+gratitude_doing:
+  - finding things to be grateful for
+
+gratitude_outro:
+  - Let's all share some gratitude!
 
 announce_gratitude_end:
   - "#ping_gratitude#, the event has ended, if you participated you will receive your cake shortly, hope you were able to spread some gratitude!"
@@ -69,10 +75,16 @@ mark_gratitude_end:
 
 # Creativity Event
 announce_creativity_begin:
-  - |
-    Hey #ping_creativity#, today is Creative Thursday! Between 6am EST - 6pm EST, head on over to #ch_creativity# and post a piece of artwork or another creation you made!
+  - "#[event_name:Creativity][event_ping:#ping_creativity#][day_of_week:Thursday][event_instructions:#creativity_instructions#][event_doing:#creativity_doing#][event_outro:#creativity_outro#]announce_event_begin#"
 
-    Each participant will receive 250 :cake: sometime after the event ends.
+creativity_instructions:
+  - "Between 6am EST - 6pm EST, head on over to #ch_creativity# and post a piece of artwork or another creation you made!"
+
+creativity_doing:
+  - sharing your creations
+
+creativity_outro:
+  - Have fun sharing your creations!
 
 announce_creativity_end:
   - "#ping_creativity#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share some of your creativity and projects with others!"
@@ -83,12 +95,23 @@ mark_creativity_begin:
 mark_creativity_end:
   - Creativity event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
 
+
 # Achievements Event
 announce_achievements_begin:
+  - "#[event_name:Achievements][event_ping:#ping_achievements#][day_of_week:Friday][event_instructions:#achievements_instructions#][event_doing:#achievements_doing#][event_outro:#achievements_outro#]announce_event_begin#"
   - |
     Hey #ping_achievements#, today is Achievement Friday! Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!
 
     Each participant will receive 250 :cake: sometime after the event ends.
+
+achievements_instructions:
+  - "Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!"
+
+achievements_doing:
+  - celebrating your achievements
+
+achievements_outro:
+  - What have you accomplished recently?
 
 announce_achievements_end:
   - "#ping_achievements#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share your achievements!"
@@ -98,6 +121,9 @@ mark_achievements_begin:
 
 mark_achievements_end:
   - Achievement event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
+
+# Generic announcement info
 
 announce_event_begin:
   - "#event_intro# #event_instructions.capitalize# #event_cake# #event_outro#"
