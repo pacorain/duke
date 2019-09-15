@@ -27,14 +27,18 @@ announce_toastme_end:
 
 # Cognitive Reframing Event
 announce_reframing_begin:
-  - |
-    Hey #ping_reframing#, it's time for some Cognitive Reframing!
+  - "#[event_name:Cognitive Reframing][event_ping:#ping_reframing#][day_of_week:Tuesday][event_instructions:#reframing_instructions#][event_doing:#reframing_doing#][event_outro:#reframing_outro#]announce_event_begin#"
 
-    If you have a negative thought, head over to #ch_reframing# and reframe it to be a more constructive thought! Using this process can help you break through the negative mental filters that we sometimes apply.
+reframing_instructions:
+  - "If you have a negative thought, head over to #ch_reframing# and reframe it to be a more constructive thought! Using this process can help you break through the negative mental filters that we sometimes apply."
 
-    All the people who participate will get 250 :cake:
+reframing_doing:
+  - improving your thoughts
+  - thinking positive
 
-    This event will last 12h. Remember to think positive!
+reframing_outro:
+  - This event will last 12 hours.
+  - Remember to think positive!
 
 announce_reframing_end:
   - "#ping_reframing# the event has ended, if you participated you will receive your cake shortly, hope you were able to get a productive reframing!"
@@ -97,6 +101,14 @@ mark_achievements_end:
 
 announce_event_begin:
   - "#event_intro# #event_instructions.capitalize# #event_cake# #event_outro#"
+  - |
+    #event_intro#
+
+    #event_instructions.capitalize#
+
+    #event_cake#
+
+    #event_outro#
 
 event_intro:
   - "Hey everyone! It's #event_ping# #day_of_week#!"
@@ -120,6 +132,7 @@ event_intro:
   - "Are you ready for some #event_ping#?"
   - "It's that time again! Let's get ready for some #event_ping#!"
   - "It's #event_ping# #day_of_week#!"
+  - "Hey #event_ping#, it's time for #event_name#."
 
 
 event_cake:
