@@ -1,6 +1,25 @@
 # Toast Me event
 announce_toastme_begin:
-  - "#ping_toastme# It’s Toast Me Monday!! Post a pic in #ch_toastme# and type “Toast Me” for wholesome comments. Be sure to respond to other Toasts as well! You get 250 cake for participating. The event will last 12 hours. Happy toasting!"
+  - "#[event_name:Toast Me][event_ping:#ping_toastme#][day_of_week:Monday][event_instructions:#toastme_instructions#][event_doing:#toastme_doing#][event_outro:#toastme_outro#]announce_event_begin#"
+
+toastme_instructions:
+  - "#toastme_post_pic# #toastme_extra#"
+
+toastme_post_pic:
+  - "Post a pic in #ch_toastme# and type \"Toast Me\" for some wholesome comments."
+
+toastme_extra:
+  - Be sure to respond to other Toasts as well!
+
+toastme_doing:
+  - sharing kindness with each other
+  - building your confidence
+  - helping others build their confidence
+  - complimenting fellow misfits
+  - tackling negative thoughts about your own appearance
+
+toastme_outro:
+  - Happy Toasting!!
 
 announce_toastme_end:
   - Toast Me has ended. Cake will be awarded shortly. Thank you for participating and see you next Monday for Toast Me!!
@@ -75,3 +94,45 @@ mark_achievements_begin:
 
 mark_achievements_end:
   - Achievement event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
+announce_event_begin:
+  - "#event_intro# #event_instructions.capitalize# #event_cake# #event_outro#"
+
+event_intro:
+  - "Hey everyone! It's #event_ping# #day_of_week#!"
+  - "It's #day_of_week#! Time for some #event_ping#!"
+  - |
+    zzz...
+    zzz...
+    zzz...
+    zz--Oh! Hello there! My, I must have overslept. Can you tell me what day it is?
+
+    ...
+    #day_of_week.uppercase#!?
+
+    But...that means it's time for #event_ping#!!!
+
+  - "Hey #event_ping#! Are you ready for #event_name# #day_of_week#?"
+  - "#event_ping# It's that time again!"
+  - "It's #day_of_week#! Are you ready for some #event_ping#?"
+  - "Good morning everyone! It's #day_of_week#, which means it's time for some #event_ping#!"
+  - "Good morning, #event_ping#! Happy #day_of_week#!"
+  - "Are you ready for some #event_ping#?"
+  - "It's that time again! Let's get ready for some #event_ping#!"
+  - "It's #event_ping# #day_of_week#!"
+
+
+event_cake:
+  - "Participants get 250 :cake:!"
+  - "Each participant will receive 250 :cake: sometime after the event ends."
+  - "On top of practicing good mental health habits, you will get some cake!"
+  - "Oh, and did I mention participants get cake?"
+  - "As always, you will get 250 :cake: for participating."
+  - "As always, you will get 250 :cake: for #event_doing#."
+  - "You will get cake if you do!"
+  - "Participants get 250 :cake:. That's like five whole `.pick`s in #ch_casual#!"
+  - "You will even get cake for joining in!"
+  - "There's even some cake in it for you!"
+  - "And don't forget about the cake that comes with it!"
+  - "Any verified member can participate to get 250 cake! :cake:"
+  - "\n\nP.S. Do you want to be notified when it's time for this event? Make sure you have the #event_name# role selected in #ch_roles#"
