@@ -24,6 +24,12 @@ toastme_outro:
 announce_toastme_end:
   - Toast Me has ended. Cake will be awarded shortly. Thank you for participating and see you next Monday for Toast Me!!
 
+mark_toastme_begin:
+  - "Toast Me event starts now\n-------------------------------"
+
+mark_toastme_end:
+  - Toast Me event has ended, thanks to everyone that participated!! Your cake will be awarded as soon as possible!
+
 
 # Cognitive Reframing Event
 announce_reframing_begin:
@@ -39,6 +45,7 @@ reframing_doing:
 reframing_outro:
   - This event will last 12 hours.
   - Remember to think positive!
+  - Doing this regularly can help improve your mental health!
 
 announce_reframing_end:
   - "#ping_reframing# the event has ended, if you participated you will receive your cake shortly, hope you were able to get a productive reframing!"
@@ -85,6 +92,8 @@ creativity_doing:
 
 creativity_outro:
   - Have fun sharing your creations!
+  - I can't wait to see what you've made!
+  - "If you aren't sure what to post, try drawing #drawing_prompt_character# #drawing_prompt_action#."
 
 announce_creativity_end:
   - "#ping_creativity#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share some of your creativity and projects with others!"
@@ -99,10 +108,6 @@ mark_creativity_end:
 # Achievements Event
 announce_achievements_begin:
   - "#[event_name:Achievements][event_ping:#ping_achievements#][day_of_week:Friday][event_instructions:#achievements_instructions#][event_doing:#achievements_doing#][event_outro:#achievements_outro#]announce_event_begin#"
-  - |
-    Hey #ping_achievements#, today is Achievement Friday! Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!
-
-    Each participant will receive 250 :cake: sometime after the event ends.
 
 achievements_instructions:
   - "Between 6am EST - 6pm EST, head on over to #ch_achievements# and post a goal or something else you've achieved!"
@@ -112,6 +117,7 @@ achievements_doing:
 
 achievements_outro:
   - What have you accomplished recently?
+  - It's good for you to celebrate what you've accomplished!
 
 announce_achievements_end:
   - "#ping_achievements#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share your achievements!"

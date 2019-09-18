@@ -1,0 +1,226 @@
+
+
+drawing_prompt_character:
+# Comics
+- a hero
+- a villain
+- a supervillain
+
+# Magical creatures
+- a ghost
+- a monster
+- a troll
+- an elf
+- a wizard
+- a mermaid
+- an angel
+- a demon
+- a Jedi Knight
+- a Sith Lord
+- a Dalek
+
+# Other types of characters
+- a Pokémon
+- a robot
+- a cyborg
+- an alien
+- a muppet
+
+# Historical
+- a caveman
+- a viking
+- a pirate
+- a goth
+
+# Familial
+- a parent
+- a grandparent
+- a child
+
+# Jobs
+- an accountant
+- a painter
+- a movie director
+- a detective
+- a knight
+- a ninja
+- a nerd
+- a gentleman
+- a teacher
+- a mechanic
+- a cowboy
+- a nurse
+- an assassin
+- a businessman
+- a scientist
+- a mad scientist
+- an astronaut
+- a pinup
+- a psychic
+- a diver
+- an explorer
+- a pilot
+- a soldier
+- a sailor
+
+# Subjective
+- yourself
+- your best friend
+- your parents
+
+# Politicians
+- Abraham Lincoln
+- Barack Obama
+- George Bush
+- Bill Clinton
+- Angela Merkel
+- Francois Hollande
+
+# Historical persons
+- Mahatma Gandhi
+- Dalai Lama
+- Saddam Hussein
+- Julius Caesar
+- Pharaoh
+- Einstein
+- Hitler
+- Nelson Mandela
+
+# Celebrities
+- Bill Watterson
+- Daft Punk
+- Elvis Presley
+- Freddie Mercury
+
+# Marvel Comic book heroes
+- Captain America
+- Catwoman
+- Iron Man
+- Professor X
+- Spider-Man
+- Superman
+- The Hulk
+- Wolverine
+- Groot
+
+# Disney characters
+- Ariel
+- Mickey Mouse
+- Goofy
+- Donald Duck
+- Huey, Dewey, and Louie
+- Uncle Scrooge
+- Aladdin
+- Jafar
+- Genie
+- Snow White
+- Cinderella
+- Cruella de Vil
+- Fairy Godmother
+- Pocahontas
+- Elsa
+
+# Belgian comics
+- Tintin
+- Spirou
+- a smurf
+- Gaston Lagaffe
+- Lucky Luke
+
+# Other comics
+- Calvin and Hobbes
+
+# Movies
+- Shrek
+
+# The Simpsons
+- Homer Simpson
+- Marge Simpson
+- Bart Simpson
+- Lisa Simpson
+
+# Futurama
+- Fry
+- Bender
+- Leela
+- Zoidberg
+- Amy Wong
+
+# Anime
+- Sailor Moon
+- Naruto
+- Sasuke
+- Sakura
+- Goku
+
+# Nintendo characters
+- Link
+- Princess Zelda
+- Mario
+- Princess Peach
+- Bowser
+
+# Other video game character
+- Sonic
+- Samus Aran
+- Gomez
+
+# Star Wars
+- Luke Skywalker
+- Leia Skywalker
+- Darth Vader
+- C-3PO
+- R2-D2
+- Jabba the Hutt
+- Yoda
+
+# Star Trek
+- Captain Kirk
+- Spock
+- Scotty
+- Jean-Luc Picard
+- Data
+
+# Lord of the Rings
+- Gandalf
+- Frodo
+- Bilbo
+- Gollum
+
+# Harry Potter
+- Harry Potter
+- Ron Weasley
+- Hermione Granger
+- Albus Dumbledore
+- Voldemort
+
+# Other
+- The Doctor
+- Sherlock Holmes
+- Inspector Gadget
+- Barbie
+
+drawing_prompt_action:
+- being drunk
+- dining at a fine restaurant
+- in a fistfight
+- preparing for war
+- climbing a mountain
+- Scuba diving
+- climbing Mt. Everest
+- surfing
+- playing a video game
+- saving the universe
+- in a mecha suit
+- in retirement
+
+# From v3.0
+- in a sexy swimsuit
+- gazing wistfully at the sunset
+- wearing only a buttoned shirt
+- attacked by a bee
+- piloting a giant robot
+- given powers by cosmic radiation
+- cooking
+- being themselves
+- as the opposite gender
