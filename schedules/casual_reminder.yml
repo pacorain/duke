@@ -1,5 +1,7 @@
 - message: "#casual_reminder#"
   webhook: aspen_general
   schedule:
-    type: hourly
-    interval: 1
+    type: random
+    start_time: "06:00"
+    end_time: "22:00"
+    minutes_apart_range: 15-120
