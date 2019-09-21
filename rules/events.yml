@@ -47,6 +47,22 @@ announce_reframing_begin:
 
 reframing_instructions:
   - "If you have a negative thought, head over to #ch_reframing# and reframe it to be a more constructive thought! Using this process can help you break through the negative mental filters that we sometimes apply."
+  - "If you have a negative thought, #[them:it]reframe_them#."
+  - "Cognitive Reframing is a process that helps you fight negative thoughts and taking over your emotions. #[them:them]reframe_them#"
+  - "Could your perspective on a situation be making you feel worse? Check your thoughts, and #[them:them]reframe_them#"
+
+reframe_them:
+  - "head over to #ch_reframing# and reframe #them# to be a more constructive thought! #reframing_extra#"
+  - "fight #them# off in #ch_reframing#! See the pinned message for a template. #reframing_extra#"
+  - "share your thought in #ch_reframing#, and then use the template to \"edit\" your thought. #reframing_extra#"
+
+reframing_extra:
+  - ""
+  - "" # A couple of empty strings so that we don't get an extra every week
+  - Using this process can help you break through the negative mental filters that we sometimes apply.
+  - Minding your thinking patterns is a key step to improving your mental health.
+  - Remember, you can do this any time--it's a good habit to form!
+  - If you do this enough, it should start to become second nature and help you feel better in different situations.
 
 reframing_doing:
   - improving your thoughts
@@ -55,7 +71,6 @@ reframing_doing:
 reframing_outro:
   - This event will last 12 hours.
   - Remember to think positive!
-  - Doing this regularly can help improve your mental health!
 
 announce_reframing_end:
   - "#ping_reframing# the event has ended, if you participated you will receive your cake shortly, hope you were able to get a productive reframing!"
