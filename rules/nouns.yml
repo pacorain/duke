@@ -2843,7 +2843,7 @@ noun:
 - years
 - yeast
 - yell
-- yes
+- !!str yes
 - yeti
 - yield
 - yoga
