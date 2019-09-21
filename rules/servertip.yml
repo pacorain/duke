@@ -1,0 +1,67 @@
+servertip:
+  - "#servertip_donate# #casual_reminder_outro#"
+  - "#servertip_quiet#"
+  - "#servertip_cake#"
+  - "#servertip_helpdesk#"
+  - "#servertip_happy_letter#"
+  - "#servertip_cognitive_reframing#"
+
+servertip_donate:
+  - "If you would like to donate to House of Misfits, #donate_instructions#"
+  - "Did you know that you can get cake by donating to House of Misfits? #donate_instructions.capitalize#"
+  - "Donations play a big part in making this server a haven for mental health. If you want to contribute, #donate_instructions#"
+
+donate_instructions:
+  - "type `donate` in #ch_botspam# and my friend, Toriel, will walk you through the rest."
+
+
+servertip_quiet:
+  - "If this channel is getting too wild/crazy for you... #quiet_instructions#."
+  - "Ah! So many chats! If you want something a little more calm, #quiet_instructions#."
+  - "You can also #quiet_instructions# for a conversation that's easier to keep up with."
+
+quiet_instructions:
+  - "try #ch_quiet# chat"
+  - "head over to the #ch_quiet# channel"
+  - "chat in #ch_quiet#"
+
+
+servertip_cake:
+  - "#cake_intro# #cake_earn# #cake_spend#"
+
+cake_intro:
+  - Cake is our server's currency.
+  - Need more cake?
+  - Want more cake?
+  - If you have a hunger for more cake, don't worry.
+
+cake_earn:
+  - It can be picked by talking in this channel and earned by participating in events.
+  - "You can earn cake by gambling it in #ch_botspam#. Be careful though, it's just as easy to lose it."
+  - We have events every weekday that allow you to earn cake.
+  - Toriel will occasionally drop some here. Don't worry, it's safe if you follow the 5-second rule.
+  - You can even earn it if you have some spare change to donate to House of Misfits!
+
+cake_spend:
+  - You can spend your cake in the Spend Cake category.
+  - "If you have too much cake, feel free to gamble it all in #ch_botspam#. Type `.cmds gambling` there to get all of the possible games."
+  - One way to spend your cake is to buy the colorful role in the Spend Cake category!
+
+
+servertip_helpdesk:
+  - "Have a question but not sure who to ask? #helpdesk_instructions.capitalize#"
+  - "If you need help, #helpdesk_instructions#"
+
+helpdesk_instructions:
+  - "head to #ch_helpdesk# with your question and a staff member will answer shortly."
+  - "type your question in #ch_helpdesk#. We have a staff who is happy to help."
+  - "don't sweat it! Send a message in #ch_helpdesk#."
+  - "#ch_helpdesk# is your answer."
+
+
+servertip_happy_letter:
+  - "Want to say something nice, encouraging, positive, or wholesome to another member but don't want to come off creepy or initiate awkward conversation? Send them an anonymous #ch_happy_letter#"
+  - "You can send friendly, anonymous messages to others on this server! Check out the #ch_happy_letter# channel."
+
+servertip_cognitive_reframing:
+  - "Have you checked your thoughts lately? Try the template on #ch_reframing# if you need some guidance!"

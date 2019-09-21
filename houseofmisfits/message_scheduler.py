@@ -4,6 +4,8 @@ from datetime import date, timedelta, datetime, time
 import yaml
 import logging
 
+from random import randint
+
 from houseofmisfits import Message
 
 logger = logging.getLogger(__name__)
@@ -75,6 +77,8 @@ class MessageScheduler:
                 self.schedule_weekly(scheduled_message)
             elif schedule_type == 'minutely':
                 self.schedule_minutely(scheduled_message)
+            elif schedule_type == 'random':
+                self.schedule_randomly(scheduled_message)
             else:
                 raise KeyError(schedule_type)
         if set_date:
@@ -121,6 +125,30 @@ class MessageScheduler:
                 return
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
+
+    def schedule_randomly(self, message):
+        logger.debug('Setting message {} to intermittent schedule'.format(message['message']))
+        webhook = message['webhook']
+        unflat_text = message['message']
+        schedule = message['schedule']
+        if 'days' in schedule and weekdays[self.date.weekday()] not in schedule['days']:
+            return
+        start_time = datetime.combine(self.date, time.fromisoformat(schedule['start_time']))
+        end_time = datetime.combine(self.date, time.fromisoformat(schedule['end_time']))
+        min_interval, max_interval = (int(mins) * 60 for mins in schedule['minutes_apart_range'].split('-'))
+        for message_time in self.get_random_times(start_time, end_time, min_interval, max_interval):
+            new_message = Message(webhook, unflat_text, self.rules, message_time)
+            self.messages.append(new_message)
+
+    @staticmethod
+    def get_random_times(start_time, end_time, min_interval_secs, max_interval_secs):
+        random_times = []
+        message_time = start_time + timedelta(seconds=randint(min_interval_secs, max_interval_secs) - min_interval_secs)
+        while message_time <= end_time:
+            random_times.append(message_time)
+            message_time += timedelta(seconds=randint(min_interval_secs, max_interval_secs))
+        return random_times
+
 
     @staticmethod
     def load_rules():

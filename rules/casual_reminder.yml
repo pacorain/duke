@@ -1,0 +1,29 @@
+casual_reminder:
+  - "#servertip#"
+  - "#wellness#"
+
+casual_reminder_intro:
+  - Hey!
+  - Hi there!
+  - Hello!
+  - Sup, HoMies?
+  - How are you doing today?
+  - Hello friends!
+  - How is everyong doing?
+  - Hey, I have something to tell you guys!
+  - "We interrupt your chat to bring you an important message:"
+  - Hello, there!
+  - Just checking in.
+  - omg, have you heard?
+
+casual_reminder_outro:
+  - "Thank you!"
+  - That's all.
+  - Remember that you matter very much.
+  - You are awesome!
+  - "Oh, and one last thing: You are absolutely the *best* version of you to ever exist, and you should never forget that."
+  - Bye!
+  - Thanks!
+  - ":heart:"
+  - Be kind to yourself!
+  - Take care!
