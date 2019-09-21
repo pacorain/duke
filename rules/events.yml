@@ -43,7 +43,7 @@ mark_toastme_end:
 
 # Cognitive Reframing Event
 announce_reframing_begin:
-  - "#[event_name:Cognitive Reframing][event_ping:#ping_reframing#][day_of_week:Tuesday][event_instructions:#reframing_instructions#][event_doing:#reframing_doing#][event_outro:#reframing_outro#]announce_event_begin#"
+  - "#[event_name:Cognitive Reframing][event_ping:#ping_reframing#][day_of_week:Wednesday][event_instructions:#reframing_instructions#][event_doing:#reframing_doing#][event_outro:#reframing_outro#]announce_event_begin#"
 
 reframing_instructions:
   - "If you have a negative thought, head over to #ch_reframing# and reframe it to be a more constructive thought! Using this process can help you break through the negative mental filters that we sometimes apply."
@@ -84,7 +84,7 @@ mark_reframing_end:
 
 # Gratitude Event
 announce_gratitude_begin:
-  - "#[event_name:Gratitude][event_ping:#ping_gratitude#][day_of_week:Wednesday][event_instructions:#gratitude_instructions#][event_doing:#gratitude_doing#][event_outro:#gratitude_outro#]announce_event_begin#"
+  - "#[event_name:Gratitude][event_ping:#ping_gratitude#][day_of_week:Tuesday][event_instructions:#gratitude_instructions#][event_doing:#gratitude_doing#][event_outro:#gratitude_outro#]announce_event_begin#"
 
 gratitude_instructions:
   - "Between 6am EST - 6pm EST, head on over to #ch_gratitude# and post something/ping someone that you're grateful for!"
@@ -119,6 +119,7 @@ creativity_outro:
   - Have fun sharing your creations!
   - I can't wait to see what you've made!
   - "If you aren't sure what to post, try drawing #drawing_prompt_character# #drawing_prompt_action#."
+  - "Need an idea? Hmmm...how about #medium.a# about #noun.s#?"
 
 announce_creativity_end:
   - "#ping_creativity#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share some of your creativity and projects with others!"
