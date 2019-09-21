@@ -14,7 +14,8 @@ from houseofmisfits import MessageScheduler
 SCHEDULES_SUPPORTED = [
     'weekly',
     'hourly',
-    'minutely'
+    'minutely',
+    'random'
 ]
 
 
