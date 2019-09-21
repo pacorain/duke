@@ -4,12 +4,17 @@ announce_toastme_begin:
 
 toastme_instructions:
   - "#toastme_post_pic# #toastme_extra#"
+  - "#toastme_post_pic#\n\n #toastme_extra#"
 
 toastme_post_pic:
   - "Post a pic in #ch_toastme# and type \"Toast Me\" for some wholesome comments."
+  - "Take a selfie, put it in #ch_toastme#, and type the caption \"Toast Me\"."
+  - "Put wholesome comments on each other's selfies!"
+  - "It doesn't matter whether you're just waking up with bedhead or are all fancied up, let's see those selfies in #ch_toastme#"
 
 toastme_extra:
   - Be sure to respond to other Toasts as well!
+  - This is a really good opportunity to work on your self-confidence and help others do the same!
 
 toastme_doing:
   - sharing kindness with each other
@@ -17,9 +22,14 @@ toastme_doing:
   - helping others build their confidence
   - complimenting fellow misfits
   - tackling negative thoughts about your own appearance
+  - showing off your beautiful face
 
 toastme_outro:
   - Happy Toasting!!
+  - Let's see those beautiful faces!
+  - I always love reading the wholesome comments every Monday!
+  - Silly faces *are* allowed.
+  - Mmmm...now I want some toast...
 
 announce_toastme_end:
   - Toast Me has ended. Cake will be awarded shortly. Thank you for participating and see you next Monday for Toast Me!!
