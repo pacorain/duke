@@ -1,5 +1,5 @@
 servertip:
-  - "#servertip_donate# #casual_reminder_outro#"
+  # - "#servertip_donate# #casual_reminder_outro#"
   - "#servertip_quiet#"
   - "#servertip_cake#"
   - "#servertip_helpdesk#"
