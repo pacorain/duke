@@ -1,18 +1,30 @@
 wellness:
   - "#wellness_classic#"
+  - "#wellness_classic#"
+  - "#casual_reminder_intro# #wellness_classic#"
+  - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
+  - "#wellness_classic# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #wellness_classic#"
+  - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
   - "#wellness_dynamic#"
   - "#wellness_dynamic#"
   - "#wellness_dynamic#"
   - "#wellness_dynamic#"
   - "#wellness_dynamic#" # put multiple times to make this more likely
+  - "#wellness_classic# #casual_reminder_outro#"
+  - "#wellness_dynamic# #casual_reminder_outro#"
+  - "#wellness_dynamic# #casual_reminder_outro#"
+  - "#wellness_dynamic# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #wellness_dynamic#"
+  - "#casual_reminder_intro# #wellness_dynamic#"
+  - "#casual_reminder_intro# #wellness_dynamic#"
+  - "#casual_reminder_intro# #wellness_dynamic#"
+  - "#casual_reminder_intro# #wellness_dynamic# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #wellness_dynamic# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #wellness_dynamic# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #wellness_dynamic# #casual_reminder_outro#"
 
 wellness_classic:
-  - "#casual_reminder_intro# #wellness_classic#"
-  - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
-  - "#wellness_classic# #casual_reminder_outro#"
-  - "#casual_reminder_intro# #wellness_classic#"
-  - "#casual_reminder_intro# #wellness_classic# #casual_reminder_outro#"
-  - "#wellness_classic# #casual_reminder_outro#"
   - Everybody take a minute to drink a glass of water. That's all. And if you forgot to take your meds today, this is your reminder.
   - Your reminder to drink water! If you hate water, put some fruit in it or add a splash of juice or water flavorer.
   - Do you take vitamins or supplements for your health? Don't forget to take them today and keep your body healthy.
@@ -27,8 +39,6 @@ wellness_dynamic:
 
 wellness_sentence:
   - "Make sure you #var_do# every once in a while!"
-  - "#casual_reminder_intro# #wellness_sentence#"
-  - "#wellness_sentence# #casual_reminder_outro#"
   - "#casual_reminder_intro# #wellness_sentence# #casual_reminder_outro#"
   - "Don't forget to #var_do#! #var_noun.capitalize# #var_is# very important for your health."
   - "Don't forget about #var_noun#!"
