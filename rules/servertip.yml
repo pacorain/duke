@@ -1,5 +1,15 @@
 servertip:
-  - "#servertip_donate# #casual_reminder_outro#"
+  - "#servertip_sentence#"
+  - "#servertip_sentence#"
+  - "#servertip_sentence#"
+  - "#servertip_sentence# #casual_reminder_outro#"
+  - "#servertip_sentence# #casual_reminder_outro#"
+  - "#casual_reminder_intro# #servertip_sentence#"
+  - "#casual_reminder_intro# #servertip_sentence#"
+  - "#casual_reminder_intro# #servertip_sentence# #casual_reminder_outro#"
+
+servertip_sentence:
+  # Disabling donations - "#servertip_donate#
   - "#servertip_quiet#"
   - "#servertip_cake#"
   - "#servertip_helpdesk#"
