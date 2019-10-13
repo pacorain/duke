@@ -39,7 +39,6 @@ wellness_dynamic:
 
 wellness_sentence:
   - "Make sure you #var_do# every once in a while!"
-  - "#casual_reminder_intro# #wellness_sentence# #casual_reminder_outro#"
   - "Don't forget to #var_do#! #var_noun.capitalize# #var_is# very important for your health."
   - "Don't forget about #var_noun#!"
   - "Make sure to #var_do#! If you struggle with #var_noun#, you can #var_suggestion#."
