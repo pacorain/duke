@@ -43,7 +43,7 @@ mark_toastme_end:
 
 # Cognitive Reframing Event
 announce_reframing_begin:
-  - "#[event_name:Cognitive Reframing][event_ping:#ping_reframing#][day_of_week:Wednesday][event_instructions:#reframing_instructions#][event_doing:#reframing_doing#][event_outro:#reframing_outro#]announce_event_begin#"
+  - "#[event_name:Cognitive Reframing][event_ping:#ping_reframing#][day_of_week:Wednesday][event_instructions:#reframing_instructions#][event_doing:#reframing_doing#][event_outro:#reframing_outro#]announce_event_nocake_begin#"
 
 reframing_instructions:
   - "If you have a negative thought, head over to #ch_reframing# and reframe it to be a more constructive thought! Using this process can help you break through the negative mental filters that we sometimes apply."
@@ -107,7 +107,7 @@ mark_gratitude_end:
 
 # Creativity Event
 announce_creativity_begin:
-  - "#[event_name:Creativity][event_ping:#ping_creativity#][day_of_week:Thursday][event_instructions:#creativity_instructions#][event_doing:#creativity_doing#][event_outro:#creativity_outro#]announce_event_begin#"
+  - "#[event_name:Creativity][event_ping:#ping_creativity#][day_of_week:Thursday][event_instructions:#creativity_instructions#][event_doing:#creativity_doing#][event_outro:#creativity_outro#]announce_event_nocake_begin#"
 
 creativity_instructions:
   - "Between 6am EST - 6pm EST, head on over to #ch_creativity# and post a piece of artwork or another creation you made!"
@@ -165,6 +165,15 @@ announce_event_begin:
     #event_instructions.capitalize#
 
     #event_cake#
+
+    #event_outro#
+
+announce_event_nocake_begin:
+  - "#event_intro# #event_instructions.capitalize# #event_outro#"
+  - |
+    #event_intro#
+
+    #event_instructions.capitalize#
 
     #event_outro#
 
