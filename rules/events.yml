@@ -73,7 +73,7 @@ reframing_outro:
   - Remember to think positive!
 
 announce_reframing_end:
-  - "#ping_reframing# the event has ended, if you participated you will receive your cake shortly, hope you were able to get a productive reframing!"
+  - "#ping_reframing# the event has ended, hope you were able to get a productive reframing!"
 
 mark_reframing_begin:
   - "Reframing event starts now\n-------------------------------"
@@ -122,7 +122,7 @@ creativity_outro:
   - "Need an idea? Hmmm...how about #medium.a# about #noun.s#?"
 
 announce_creativity_end:
-  - "#ping_creativity#, the event has ended, if you participated you will receive your cake shortly, hope you were able to share some of your creativity and projects with others!"
+  - "#ping_creativity#, the event has ended, hope you were able to share some of your creativity and projects with others!"
 
 mark_creativity_begin:
   - "Creativity event starts now\n--------------------------"
