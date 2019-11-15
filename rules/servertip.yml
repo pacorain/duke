@@ -13,7 +13,6 @@ servertip_sentence:
   - "#servertip_quiet#"
   - "#servertip_cake#"
   - "#servertip_helpdesk#"
-  - "#servertip_happy_letter#"
   - "#servertip_cognitive_reframing#"
 
 servertip_donate:
@@ -67,11 +66,7 @@ helpdesk_instructions:
   - "type your question in #ch_helpdesk#. We have a staff who is happy to help."
   - "don't sweat it! Send a message in #ch_helpdesk#."
   - "#ch_helpdesk# is your answer."
-
-
-servertip_happy_letter:
-  - "Want to say something nice, encouraging, positive, or wholesome to another member but don't want to come off creepy or initiate awkward conversation? Send them an anonymous #ch_happy_letter#"
-  - "You can send friendly, anonymous messages to others on this server! Check out the #ch_happy_letter# channel."
+  
 
 servertip_cognitive_reframing:
   - "Have you checked your thoughts lately? Try the template on #ch_reframing# if you need some guidance!"
