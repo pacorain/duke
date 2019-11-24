@@ -5,3 +5,5 @@ services:
     command: run
     image: aspen:latest
     restart: unless-stopped
+    environment:
+      - WEBHOOKS_FILE
