@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  aspen:
+    build: ./
+    command: run
+    image: aspen:latest
+    restart: unless-stopped

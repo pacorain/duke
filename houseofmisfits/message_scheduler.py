@@ -51,7 +51,7 @@ class MessageScheduler:
             content += "</table>"
         content += "</html>"
 
-        debug_output_path = os.getenv('WORKSPACE') + '/output.html'
+        debug_output_path = 'output.html'
         with open(debug_output_path, 'w') as html_file:
             html_file.write(content)
 
@@ -153,7 +153,7 @@ class MessageScheduler:
     @staticmethod
     def load_rules():
         rules = {}
-        rules_dir = os.getenv('WORKSPACE') + '/rules'
+        rules_dir = 'rules'
         for file in os.listdir(rules_dir):
             with open(rules_dir + '/' + file, 'r') as yaml_file:
                 rule = yaml.safe_load(yaml_file)
@@ -163,7 +163,7 @@ class MessageScheduler:
     @staticmethod
     def load_schedules():
         schedules = []
-        schedules_dir = os.getenv('WORKSPACE') + '/schedules'
+        schedules_dir = 'schedules'
         for file in os.listdir(schedules_dir):
             with open(schedules_dir + '/' + file, 'r') as yaml_file:
                 schedule = yaml.safe_load(yaml_file)

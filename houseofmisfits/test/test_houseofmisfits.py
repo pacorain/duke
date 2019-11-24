@@ -27,7 +27,7 @@ class TestHouseOfMisfits(unittest.TestCase):
         self.schedules = MessageScheduler.load_schedules()
 
     def test_valid_rules_yaml_syntax(self):
-        rules_dir = os.getenv('WORKSPACE') + '/rules'
+        rules_dir = 'rules'
         for file in os.listdir(rules_dir):
             with open(rules_dir + '/' + file, 'r') as yaml_file:
                 try:
@@ -36,7 +36,7 @@ class TestHouseOfMisfits(unittest.TestCase):
                     self.fail("Uh oh, looks like the rules file {} has a bad syntax.\n\nException:\n{}".format(file, e))
 
     def test_valid_schedules_yaml_syntax(self):
-        schedules_dir = os.getenv('WORKSPACE') + '/schedules'
+        schedules_dir = 'schedules'
         for file in os.listdir(schedules_dir):
             with open(schedules_dir + '/' + file, 'r') as yaml_file:
                 try:

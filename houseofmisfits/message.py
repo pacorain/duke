@@ -57,7 +57,7 @@ class Message:
         """
         Gets the appropriate Discord webhook URL from webhooks.yaml
         """
-        webhooks_path = os.getenv('WORKSPACE') + '/webhooks.yml'
+        webhooks_path = 'webhooks.yml'
         with open(webhooks_path, 'r') as webhooks_file:
             all_webhooks = yaml.safe_load(webhooks_file)
         webhook = all_webhooks[self.webhook_name]
