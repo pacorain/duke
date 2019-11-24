@@ -3,7 +3,7 @@ services:
   aspen:
     build: ./
     command: run
-    image: houseofmisfits/aspen_${BRANCH_NAME}:latest
+    image: houseofmisfits/aspen:latest
     container_name: aspen_${BRANCH_NAME}
     restart: unless-stopped
     secrets:
