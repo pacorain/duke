@@ -1,18 +1,18 @@
 #!/usr/bin/env python
-import os
 import sys
 import time
 import logging
 
-import yaml
-
 from daemon import Daemon
-from houseofmisfits import Chatbot, DiscordLoggingHandler, MessageScheduler
+from houseofmisfits import Chatbot, MessageScheduler
+
+logger = logging.getLogger(__name__)
+logging.basicConfig()
+logger.setLevel(logging.DEBUG)
 
 
 class HouseOfMisfitsDaemon(Daemon):
     def run(self):
-        logger = HouseOfMisfitsDaemon.configure_discord_logging()
         try:
             logger.info("House of Misfits Webhooks Daemon started.")
             chatbot = Chatbot()
@@ -24,30 +24,8 @@ class HouseOfMisfitsDaemon(Daemon):
 
     @staticmethod
     def debug():
-        logger = HouseOfMisfitsDaemon.configure_discord_logging()
         logger.info("Simulating new week in debugging branch.")
         MessageScheduler.simulate_week()
-
-    @staticmethod
-    def configure_discord_logging():
-        logger = logging.getLogger()
-        # TODO: Set logging level dynamically
-        logger.setLevel(logging.INFO)
-        critical_url = os.getenv('SYS_WEBHOOK_URL')
-        workspace_dir = os.getenv('WORKSPACE')
-        with open(workspace_dir + '/webhooks.yml', 'r') as webhooks_file:
-            wh = yaml.safe_load(webhooks_file)
-        urls = [
-            wh['logging_debug'],
-            wh['logging_info'],
-            wh['logging_warning'],
-            wh['logging_error'],
-            critical_url
-        ]
-        h = DiscordLoggingHandler(urls)
-        h.setMention(wh['logging_mention_roleid'], logging.ERROR)
-        logger.addHandler(h)
-        return logger
 
 
 if __name__ == "__main__":
