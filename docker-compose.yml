@@ -6,5 +6,7 @@ services:
     image: aspen:latest
     restart: unless-stopped
     secrets:
-      webhooks.yml:
-        file: ${WEBHOOKS_FILE}
+      - webhooks.yml
+secrets:
+  webhooks.yml:
+    file: ${WEBHOOKS_FILE}
