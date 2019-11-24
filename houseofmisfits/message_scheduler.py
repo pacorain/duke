@@ -137,6 +137,9 @@ class MessageScheduler:
         end_time = datetime.combine(self.date, time.fromisoformat(schedule['end_time']))
         min_interval, max_interval = (int(mins) * 60 for mins in schedule['minutes_apart_range'].split('-'))
         for message_time in self.get_random_times(start_time, end_time, min_interval, max_interval):
+            if datetime.now() > message_time:
+                logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
+                continue
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
 

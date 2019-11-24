@@ -6,7 +6,7 @@ import tracery
 from tracery.modifiers import base_english
 import logging
 logger = logging.getLogger(__name__)
-
+logger.setLevel(logging.DEBUG)
 logging.getLogger("requests").setLevel(logging.WARNING)
 
 
