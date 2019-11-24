@@ -1,18 +1,33 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Build and Test') {
       steps {
-        sh '''#!/bin/bash
-virtualenv --python=python3.7 venv
-source venv/bin/activate
-
-python3 setup.py install'''
+        sh 'docker-compose build --no-cache'
       }
     }
-    stage('Test') {
+    stage('Deploy Integration'){
+      when {
+        expression { BRANCH_NAME == 'integration' }
+      }
+      environment {
+        WEBHOOKS_FILE = credentials('9adeeae1-50f8-4f8c-afac-b18df7d8b031')
+      }
       steps {
-        sh 'python3 setup.py test'
+        sh 'docker-compose down'
+        sh 'docker-compose up -d'
+      }
+    }
+    stage('Deploy Master'){
+      when {
+        expression { BRANCH_NAME == 'master' }
+      }
+      environment {
+        WEBHOOKS_FILE = credentials('20c14f11-b6b2-441b-93e9-4bdcf8795eb1')
+      }
+      steps {
+        sh 'docker-compose down'
+        sh 'docker-compose up -d'
       }
     }
   }

@@ -51,7 +51,7 @@ class MessageScheduler:
             content += "</table>"
         content += "</html>"
 
-        debug_output_path = os.getenv('WORKSPACE') + '/output.html'
+        debug_output_path = 'output.html'
         with open(debug_output_path, 'w') as html_file:
             html_file.write(content)
 
@@ -137,6 +137,9 @@ class MessageScheduler:
         end_time = datetime.combine(self.date, time.fromisoformat(schedule['end_time']))
         min_interval, max_interval = (int(mins) * 60 for mins in schedule['minutes_apart_range'].split('-'))
         for message_time in self.get_random_times(start_time, end_time, min_interval, max_interval):
+            if datetime.now() > message_time:
+                logger.debug('Skipping message {}: already past {}'.format(unflat_text, message_time.isoformat()))
+                continue
             new_message = Message(webhook, unflat_text, self.rules, message_time)
             self.messages.append(new_message)
 
@@ -153,7 +156,7 @@ class MessageScheduler:
     @staticmethod
     def load_rules():
         rules = {}
-        rules_dir = os.getenv('WORKSPACE') + '/rules'
+        rules_dir = 'rules'
         for file in os.listdir(rules_dir):
             with open(rules_dir + '/' + file, 'r') as yaml_file:
                 rule = yaml.safe_load(yaml_file)
@@ -163,7 +166,7 @@ class MessageScheduler:
     @staticmethod
     def load_schedules():
         schedules = []
-        schedules_dir = os.getenv('WORKSPACE') + '/schedules'
+        schedules_dir = 'schedules'
         for file in os.listdir(schedules_dir):
             with open(schedules_dir + '/' + file, 'r') as yaml_file:
                 schedule = yaml.safe_load(yaml_file)
