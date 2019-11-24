@@ -3,7 +3,7 @@ services:
   aspen:
     build: ./
     command: run
-    image: aspen:latest
+    image: houseofmisfits/aspen_${BRANCH_NAME}:latest
     restart: unless-stopped
     secrets:
       - webhooks.yml

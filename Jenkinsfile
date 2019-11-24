@@ -1,19 +1,22 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Build and Test') {
       steps {
-        sh '''#!/bin/bash
-virtualenv --python=python3.7 venv
-source venv/bin/activate
-
-python3 setup.py install'''
+        sh 'docker-compose build --no-cache'
       }
     }
-    stage('Test') {
-      steps {
-        sh 'python3 setup.py test'
-      }
+    if(env.BRANCH_NAME == 'dockerize'){
+        stage('Deploy'){
+            environment {
+              WEBHOOKS_FILE = credentials('9adeeae1-50f8-4f8c-afac-b18df7d8b031')
+            }
+            steps {
+              sh 'docker-compose down'
+              sh 'docker-compose up -d'
+            }
+
+        }
     }
   }
 }
