@@ -11,6 +11,10 @@ logger.setLevel(logging.DEBUG)
 
 
 def run():
+    """
+    Example command: python hom.py run
+    Runs the main program loop that schedules messages and checks for messages to be sent every second.
+    """
     try:
         logger.info("House of Misfits Webhooks Daemon started.")
         chat_bot = Chatbot()
@@ -22,6 +26,10 @@ def run():
 
 
 def debug():
+    """
+    Example command: python hom.py debug
+    Outputs an HTML file with an example schedule for the next 7 days
+    """
     logger.info("Simulating new week in debugging branch.")
     MessageScheduler.simulate_week()
 
