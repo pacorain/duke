@@ -5,7 +5,7 @@ services:
     command: run
     image: houseofmisfits/aspen:latest
     container_name: aspen_${BRANCH_NAME}
-    restart: unless-stopped
+    restart: always
     secrets:
       - webhooks.yml
 secrets:
