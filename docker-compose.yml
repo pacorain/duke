@@ -4,6 +4,7 @@ services:
     build: ./
     command: run
     image: houseofmisfits/aspen_${BRANCH_NAME}:latest
+    container_name: aspen_${BRANCH_NAME}
     restart: unless-stopped
     secrets:
       - webhooks.yml
