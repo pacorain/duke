@@ -16,16 +16,15 @@ ping_achievements:
   - <@&602196902452133928>
 
 
-# Roles on staff server
-# (Each role has its own role ID per server)
-staffserver_mod:
-  - <@&598470744875466772>
+# Staff roles
+staff_mod:
+  - <@&419901695653445633>
 
-staffserver_admin:
-  - <@&598470727318110219>
+staff_admin:
+  - <@&493804274380439572>
 
-staffserver_tech:
-  - <@&598470789099945994>
+staff_tech:
+  - <@&430700713794863104>
 
-staffserver_support:
-  - <@&598470760603975680>
+staff_support:
+  - <@&599269328654827530>
