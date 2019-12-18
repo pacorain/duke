@@ -52,9 +52,9 @@ cake_earn:
   - You can even earn it if you have some spare change to donate to House of Misfits!
 
 cake_spend:
-  - You can spend your cake in the Spend Cake category.
+  - "You can spend your cake in the #ch_botspam# channel. To see what's available, use the `.shop` command."
   - "If you have too much cake, feel free to gamble it all in #ch_botspam#. Type `.cmds gambling` there to get all of the possible games."
-  - One way to spend your cake is to buy the colorful role in the Spend Cake category!
+  - One way to spend your cake is to buy the colorful role!
 
 
 servertip_helpdesk:
