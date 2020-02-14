@@ -14,6 +14,7 @@ servertip_sentence:
   - "#servertip_cake#"
   - "#servertip_helpdesk#"
   - "#servertip_cognitive_reframing#"
+  - "#servertip_pronoun_role#"
 
 servertip_donate:
   - "If you would like to donate to House of Misfits, #donate_instructions#"
@@ -70,3 +71,14 @@ helpdesk_instructions:
 
 servertip_cognitive_reframing:
   - "Have you checked your thoughts lately? Try the template on #ch_reframing# if you need some guidance!"
+
+servertip_pronoun_role:
+  - "Being misgendered is no fun, so be sure to #pronoun_role_do#!"
+  - "Did you know you can #pronoun_role_do#?"
+
+pronoun_role_do:
+  - check a person's roles before referring to them as he/she/they
+  - be aware of someones preferred pronouns when referring to them by checking their roles
+  - "set your preferred pronouns in the #ch_roles# channel"
+
+
