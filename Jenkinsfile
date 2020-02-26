@@ -4,6 +4,9 @@ pipeline {
     stage('Build and Test') {
       steps {
         sh 'docker-compose build --no-cache'
+        sh 'rm -f output.html'
+        sh 'touch output.html'
+        sh 'docker run -v $(pwd)/output.html:/usr/src/app/output.html houseofmisfits/aspen:latest debug'
       }
     }
     stage('Deploy Integration'){
@@ -28,6 +31,16 @@ pipeline {
       steps {
         sh 'docker-compose down'
         sh 'docker-compose up -d'
+      }
+    }
+  }
+  post {
+    success {
+      script {
+        if (env.CHANGE_ID) {
+          archiveArtifacts artifacts: 'output.html'
+          pullRequest.comment("Output.html uploaded to ${env.BUILD_URL}artifact/output.html")
+        }
       }
     }
   }
