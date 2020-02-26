@@ -10,4 +10,4 @@ services:
       - webhooks.yml
 secrets:
   webhooks.yml:
-    file: ${WEBHOOKS_FILE}
+    file: webhooks.yml

@@ -15,6 +15,8 @@ servertip_sentence:
   - "#servertip_helpdesk#"
   - "#servertip_cognitive_reframing#"
   - "#servertip_pronoun_role#"
+  - "#servertip_happy_letters#"
+  - "#servertip_animated_emoji#"
 
 servertip_donate:
   - "If you would like to donate to House of Misfits, #donate_instructions#"
@@ -81,4 +83,58 @@ pronoun_role_do:
   - be aware of someones preferred pronouns when referring to them by checking their roles
   - "set your preferred pronouns in the #ch_roles# channel"
 
+servertip_happy_letters:
+  - "Did you know you can #send_happy_letter#? #happy_letter_instruction.capitalize#."
+  - "Want to #send_happy_letter# but don't want to come off creepy or initiate awkward conversation? #happy_letter_instruction.capitalize#."
+  - "You can #send_happy_letter#! #happy_letter_instruction.capitalize#."
+  - "If you want to #send_happy_letter#, #happy_letter_instruction#."
+  - "#send_happy_letter.capitalize#! #happy_letter_instruction.capitalize#."
 
+
+send_happy_letter:
+  - "let #hl_someone# on the server know #hl_compliment#"
+  - "send friendly, anonymous messages to #hl_someone# on this server"
+  - "tell #hl_someone# here #hl_compliment# by sending them an anonymous Happy Letter"
+  - "write to #hl_someone# about #hl_compliment#"
+
+hl_someone:
+  - a friend
+  - a fellow HoMie
+  - someone
+  - your favorite person
+  - others
+  - people
+  - members
+
+hl_compliment:
+  - "how #syn_great# they are"
+  - why you appreciate them
+  - why they're your favorite
+  - why they're the best
+  - what their best qualities are
+  - "what makes them so #syn_great#"
+  - your favorite thing about them
+  - how they've impacted your life
+
+happy_letter_instruction:
+  - visit the form on http://bit.ly/HoMhappynotes to send a message
+  - send them an anonymous happy letter at http://bit.ly/HoMhappynotes
+  - check out the form on http://bit.ly/HoMhappynotes
+  - head to http://bit.ly/HoMhappynotes
+  - "click this link: http://bit.ly/HoMhappynotes"
+
+servertip_animated_emoji:
+  - "#[var_not: not][servertip_emoji_do:overuse the animated emoji on the server]animated_emoji_sentence#"
+  - "#[var_not:][servertip_emoji_do:limit use of animated emoji]animated_emoji_sentence#"
+  - "#[var_not:][servertip_emoji_do:keep those with sensitivity to flashing images in mind when posting gifs and animated emoji]animated_emoji_sentence#"
+
+animated_emoji_sentence:
+  - "Just a friendly reminder#var_not# to #servertip_emoji_do#! #animated_emoji_addendum#"
+  - "When posting, make sure#var_not# to #servertip_emoji_do#. #animated_emoji_addendum#"
+  - "#animated_emoji_addendum# To help with this, it's important#var_not# to #servertip_emoji_do#."
+
+animated_emoji_addendum:
+  - We want to keep House of Misfits a fun and safe environment for all our users.
+  - There are lots of people on the server, and some of them can have issues when exposed to flashing images.
+  - Everyone deserves to be able to chat on HoM!
+  - Y'all are doing a great job at making this a great chat for everyone!
