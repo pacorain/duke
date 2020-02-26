@@ -16,6 +16,7 @@ servertip_sentence:
   - "#servertip_cognitive_reframing#"
   - "#servertip_pronoun_role#"
   - "#servertip_happy_letters#"
+  - "#servertip_animated_emoji#"
 
 servertip_donate:
   - "If you would like to donate to House of Misfits, #donate_instructions#"
@@ -122,3 +123,18 @@ happy_letter_instruction:
   - head to http://bit.ly/HoMhappynotes
   - "click this link: http://bit.ly/HoMhappynotes"
 
+servertip_animated_emoji:
+  - "#[var_not: not][servertip_emoji_do:overuse the animated emoji on the server]animated_emoji_sentence#"
+  - "#[var_not:][servertip_emoji_do:limit use of animated emoji]animated_emoji_sentence#"
+  - "#[var_not:][servertip_emoji_do:keep those with sensitivity to flashing images in mind when posting gifs and animated emoji]animated_emoji_sentence#"
+
+animated_emoji_sentence:
+  - "Just a friendly reminder#var_not# to #servertip_emoji_do#! #animated_emoji_addendum#"
+  - "When posting, make sure#var_not# to #servertip_emoji_do#. #animated_emoji_addendum#"
+  - "#animated_emoji_addendum# To help with this, it's important#var_not# to #servertip_emoji_do#."
+
+animated_emoji_addendum:
+  - We want to keep House of Misfits a fun and safe environment for all our users.
+  - There are lots of people on the server, and some of them can have issues when exposed to flashing images.
+  - Everyone deserves to be able to chat on HoM!
+  - Y'all are doing a great job at making this a great chat for everyone!
