@@ -10,6 +10,7 @@ compliment:
   - "Whoever says you're not #adjective_mod.a# #compliment_noun# can #do_unpleasant_thing#."
   - "Hey! Hey you! You're #adjective_mod.a# #compliment_noun#!"
   - "I hope you know how great you are. You're #adjective_mod.a# #compliment_noun#."
+  - "Just wanna say that #person# is #adjective_mod.a# #compliment_noun#."
 
 adjective_mod:
   - "#compliment_adjective#"
