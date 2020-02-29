@@ -6,7 +6,7 @@ pipeline {
         sh 'docker-compose build --no-cache'
         sh 'rm -f output.html'
         sh 'touch output.html'
-        sh 'docker run -v $(pwd)/output.html:/usr/src/app/output.html houseofmisfits/aspen:latest debug'
+        sh 'docker run -v $(pwd)/output.html:/usr/src/app/output.html duke/duke:latest debug'
       }
     }
     stage('Deploy Integration'){
@@ -14,7 +14,7 @@ pipeline {
         expression { BRANCH_NAME == 'integration' }
       }
       environment {
-        WEBHOOKS_FILE = credentials('9adeeae1-50f8-4f8c-afac-b18df7d8b031')
+        WEBHOOKS_FILE = credentials('')
       }
       steps {
         sh 'cp $WEBHOOKS_FILE webhooks.yml'
@@ -27,7 +27,7 @@ pipeline {
         expression { BRANCH_NAME == 'master' }
       }
       environment {
-        WEBHOOKS_FILE = credentials('20c14f11-b6b2-441b-93e9-4bdcf8795eb1')
+        WEBHOOKS_FILE = credentials('')
       }
       steps {
         sh 'cp $WEBHOOKS_FILE webhooks.yml'

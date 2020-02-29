@@ -1,4 +1,4 @@
-from houseofmisfits import MessageScheduler
+from duke import MessageScheduler
 import logging
 
 logger = logging.getLogger(__name__)

@@ -4,9 +4,9 @@ with open('requirements.txt') as f:
     requirements = f.read()
 
 setup(
-    name='HoM-PoC',
+    name='Duke',
     version='0.0.1',
-    packages=['houseofmisfits', 'houseofmisfits.test'],
+    packages=['duke', 'duke.test'],
     install_requires=requirements,
     license='Proprietary',
     test_suite='houseofmisfits.test',

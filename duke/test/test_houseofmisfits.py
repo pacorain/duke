@@ -9,7 +9,7 @@ import unittest
 
 import yaml
 
-from houseofmisfits import MessageScheduler
+from duke import MessageScheduler
 
 SCHEDULES_SUPPORTED = [
     'weekly',

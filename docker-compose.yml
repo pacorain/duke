@@ -3,8 +3,8 @@ services:
   aspen:
     build: ./
     command: run
-    image: houseofmisfits/aspen:latest
-    container_name: aspen_${BRANCH_NAME}
+    image: duke/duke:latest
+    container_name: duke_${BRANCH_NAME}
     restart: always
     secrets:
       - webhooks.yml

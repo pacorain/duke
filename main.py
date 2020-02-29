@@ -3,7 +3,7 @@ import sys
 import time
 import logging
 
-from houseofmisfits import Chatbot, MessageScheduler
+from duke import Chatbot, MessageScheduler
 
 logger = logging.getLogger(__name__)
 logging.basicConfig()
@@ -16,7 +16,7 @@ def run():
     Runs the main program loop that schedules messages and checks for messages to be sent every second.
     """
     try:
-        logger.info("House of Misfits Webhooks Daemon started.")
+        logger.info("Duke Daemon started.")
         chat_bot = Chatbot()
         while True:
             chat_bot.eval()

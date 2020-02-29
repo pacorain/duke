@@ -6,7 +6,7 @@ import logging
 
 from random import randint
 
-from houseofmisfits import Message
+from duke import Message
 
 logger = logging.getLogger(__name__)
 
