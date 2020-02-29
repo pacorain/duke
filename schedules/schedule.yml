@@ -1,0 +1,7 @@
+- message: "#random_message#"
+  webhook: casual
+  schedule:
+    type: random
+    start_time: "06:30"
+    end_time: "21:00"
+    minutes_apart_range: 0-1 #120-300

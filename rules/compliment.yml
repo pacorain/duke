@@ -1,0 +1,112 @@
+compliment:
+  - "You are #adjective_mod.a# #compliment_noun#. Don't you ever forget it."
+  - "Just wanted to remind you all what #adjective_mod# #compliment_noun.s# you are. Especially you, #person#."
+  - "[noun:#compliment_noun#]You're not just #noun.a#. You're #adjective_mod.a# #noun#."
+  - "If you ever are having self-doubt, just look in the mirror and say, \"I am #adjective_mod.a# #compliment_noun#.\" Because it's true."
+  - "You are #adjective_mod.a# #compliment_noun#."
+  - "Always remember what #adjective_mod.a# #compliment_noun# you are."
+  - "Never forget how #adjective_mod# you are."
+  - "Your daily reminder that you are #adjective_mod.a# #compliment_noun#."
+  - "Whoever says you're not #adjective_mod.a# #compliment_noun# can #do_unpleasant_thing#."
+  - "Hey! Hey you! You're #adjective_mod.a# #compliment_noun#!"
+  - "I hope you know how great you are. You're #adjective_mod.a# #compliment_noun#."
+
+adjective_mod:
+  - "#compliment_adjective#"
+  - "#compliment_adjective#"
+  - "#compliment_adjective#"
+  - "motherfucking #compliment_adjective#"
+  - "#compliment_adjective# motherfucking"
+  - "goddamn #compliment_adjective#"
+  - "fucking #compliment_adjective#"
+  - "#compliment_adjective#-as-fuck"
+  - "#compliment_adjective#-as-shit"
+  - "#compliment_adjective#-ass"
+  - "absolute fucking #compliment_adjective#"
+  - "complete #compliment_adjective#"
+  - "completely #compliment_adjective#"
+  - "entirely #compliment_adjective#"
+  - "full-on #compliment_adjective#"
+  - "quintessential #compliment_adjective#"
+  - "out-and-out #compliment_adjective#"
+  - "#compliment_adjective#-to-the-core"
+
+compliment_adjective:
+  - mystical
+  - wonderful
+  - magical
+  - perfect
+  - worthy
+  - revered
+  - sexy
+  - badass
+  - admireable
+  - exceptional
+  - amazing
+  - radiant
+  - accomplished
+  - talented
+  - gifted
+  - smart
+  - magnificent
+  - first-rate
+  - five-star
+  - second-to-none
+  - attractive
+  - beguiling
+  - kind
+  - good-natured
+  - magnanimous
+  - bright
+  - dazzling
+  - lustrous
+
+compliment_noun:
+  - warhorse
+  - unicorn
+  - being
+  - human
+  - Rainwater
+  - medical professional
+  - "embodiment of all that is #syn_good_revered#"
+  - motherfucker
+  - delight
+  - genius
+  - creature
+  - human being
+  - individual
+  - piece of hotness
+  - fraud prevention specialist
+  - nugget
+  - loaded potato
+  - nerd
+  - bitch
+  - egg
+  - queen
+  - hamster fart
+  - pickle
+  - Jedi
+  - Sith Lord
+  - goblin
+  - goddess
+  - homie
+
+syn_good_revered:
+  - good
+  - great
+  - holy
+  - sacred
+  - wonderful
+  - fucking awesome
+  - awesome
+  - upstanding
+  - Post Malone
+
+do_unpleasant_thing:
+  - suck a dick
+  - eat my ass
+  - choke on a bag of moldy dismembered penises
+  - suck on a wet fart
+  - jump off a cliff
+  - lick my unerringly small and wrinkled testicle sack
+  - go fuck themselves with a 12-foot cactus
