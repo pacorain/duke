@@ -1,0 +1,50 @@
+wellness:
+  - "#set_wellness_vars##wellness_sentence#"
+
+wellness_sentence:
+  - "If you haven't #past# recently, #do_it_now#."
+  - "Just wanted to make sure y'all #syn_remember# #infinitive#. Especially you, #person#. #fact.capitalize#."
+  - "Just wanted to make sure y'all #syn_remember# #infinitive#. #fact.capitalize#."
+  - "Raise your hand if you've #past# today!"
+
+do_it_now:
+  - now is a good time to do so
+  - you should change that
+  - you should go ahead and do that
+  - it wouldn't be a bad idea right now
+  - now is the perfect time
+  - you should
+
+syn_remember:
+  - remember
+  - don't forget
+  - keep in mind
+  - be sure
+  - don't neglect
+  - aren't forgetting
+
+set_wellness_vars:
+  - "[past:#water_past#][noun:#water_noun#][infinitive:#water_infinitive#][fact:#water_fact#]"
+
+water_past:
+  - "had any #water_noun#"
+  - "drank any #water_noun#"
+  - "had anything to drink"
+
+water_noun:
+  - H2O
+  - water
+  - water
+  - liquids
+  - fluids
+
+water_infinitive:
+  - to drink water
+  - to get plenty to drink
+  - to get plenty of water
+  - to monitor your water intake
+
+water_fact:
+  - you should be drinking at least 64 oz a day, or 8 cups
+  - it'll help you have more energy throughout the day
+  - "you need #water_noun# to keep your body healthy"
