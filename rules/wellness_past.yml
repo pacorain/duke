@@ -2,6 +2,7 @@ water_past:
   - "had any #water_noun#"
   - "drank any #water_noun#"
   - "had anything to drink"
+  - "had #water_noun#"
 
 stretch_past:
   - moved around a little
@@ -11,3 +12,13 @@ stretch_past:
   - gotten up and stretched
   - moved around enough
   - taken a stretching break
+
+enjoy_past:
+  - done anything fun
+  - done anything you enjoy
+  - done something you enjoy
+  - enjoyed yourself
+  - taken some time to focus on you
+  - treated yoself
+  - practiced a hobby
+  - done anything cool
