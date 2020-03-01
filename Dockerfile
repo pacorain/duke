@@ -8,5 +8,5 @@ COPY . .
 RUN ["python", "setup.py", "build"]
 RUN ["python", "setup.py", "install"]
 
-ENTRYPOINT ["python", "hom.py"]
+ENTRYPOINT ["python", "duke.py"]
 CMD "run"
