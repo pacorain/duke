@@ -4,4 +4,4 @@
     type: random
     start_time: "06:30"
     end_time: "21:00"
-    minutes_apart_range: 120-300
+    minutes_apart_range: 120-480
