@@ -9,7 +9,7 @@ setup(
     packages=['duke', 'duke.test'],
     install_requires=requirements,
     license='Proprietary',
-    test_suite='houseofmisfits.test',
+    test_suite='',
     classifiers=[
         'License :: Other/Proprietary License'
     ]
