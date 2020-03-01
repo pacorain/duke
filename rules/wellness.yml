@@ -6,6 +6,7 @@ wellness_sentence:
   - "Just wanted to make sure y'all #syn_remember# #infinitive#. Especially you, #person#. #fact.capitalize#."
   - "Just wanted to make sure y'all #syn_remember# #infinitive#. #fact.capitalize#."
   - "Raise your hand if you've #past# today!"
+  - "Hey #person#. Have you #past#? Do I have to remind you *again* #infinitive#? The next time I check in, I'd better see some #noun#."
 
 do_it_now:
   - now is a good time to do so
@@ -26,6 +27,7 @@ syn_remember:
 set_wellness_vars:
   - "[past:#water_past#][noun:#water_noun#][infinitive:#water_infinitive#][fact:#water_fact#]"
   - "[past:#stretch_past#][noun:#stretch_noun#][infinitive:#stretch_infinitive#][fact:#stretch_fact#]"
+  - "[past:#enjoy_past#][noun:#enjoy_noun#][infinitive:#enjoy_infinitive#][fact:#enjoy_fact#]"
 
 
 
