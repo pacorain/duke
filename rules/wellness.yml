@@ -25,26 +25,11 @@ syn_remember:
 
 set_wellness_vars:
   - "[past:#water_past#][noun:#water_noun#][infinitive:#water_infinitive#][fact:#water_fact#]"
+  - "[past:#stretch_past#][noun:#stretch_noun#][infinitive:#stretch_infinitive#][fact:#stretch_fact#]"
 
-water_past:
-  - "had any #water_noun#"
-  - "drank any #water_noun#"
-  - "had anything to drink"
 
-water_noun:
-  - H2O
-  - water
-  - water
-  - liquids
-  - fluids
 
-water_infinitive:
-  - to drink water
-  - to get plenty to drink
-  - to get plenty of water
-  - to monitor your water intake
 
-water_fact:
-  - you should be drinking at least 64 oz a day, or 8 cups
-  - it'll help you have more energy throughout the day
-  - "you need #water_noun# to keep your body healthy"
+
+
+
