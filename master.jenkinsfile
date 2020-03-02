@@ -17,6 +17,7 @@ pipeline {
         WEBHOOKS_FILE = credentials('duke-webhooks')
       }
       steps {
+        sh 'rm -f webhooks.yml'
         sh 'cp $WEBHOOKS_FILE webhooks.yml'
         sh 'docker-compose down'
         sh 'docker-compose up -d'
