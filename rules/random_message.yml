@@ -3,6 +3,7 @@ random_message:
   - "#compliment#"
   - "#wellness#"
   - "#discord_tip_unlikely#"
+  - "#gross_sentence#"
 
 discord_tip_unlikely:
   - "#random_message#"

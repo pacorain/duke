@@ -1,0 +1,87 @@
+gross_sentence:
+  - "Hey, you wanna hear something gross? #gross_phrase_spoilered#."
+  - "Your gross phrase of the day: #gross_phrase_spoilered#"
+  - "Read if you dare: #gross_phrase_spoilered#"
+  - "#gross_phrase_spoilered# Made you look!"
+  - "If someone annoys you today, just tell them: \"||You can #verb_gross_thing# my #gross_phrase#||!\""
+
+gross_phrase_spoilered:
+  - "||#gross_phrase#||"
+
+gross_phrase:
+  - "#gross_adjective# #gross_attributive_noun# #gross_noun#"
+
+gross_adjective:
+  - anal
+  - renal
+  - moist
+  - moldy
+  - flaccid
+  - tender
+  - crusty
+  - damp
+  - flappy
+  - gushing
+  - pungent
+  - exuding
+  - raunchy
+  - titillating
+  - viscous
+  - crunchy
+  - festering
+  - burning
+  - itchy
+  - oozy
+  - putrid
+  - dripping
+  - mashed
+  - veiny
+  - thrusting
+
+gross_attributive_noun:
+  - panty
+  - trump
+  - phlegm
+  - lady
+  - mucus
+  - yeast
+  - squirt
+  - chunk
+  - roach
+  - vomit
+  - smegma
+  - placenta
+  - scat
+  - loogie
+  - cum
+  - snot
+  - dildo
+  - menstruation
+  - fungus
+  - sweat
+
+gross_noun:
+  - ointment
+  - hoagie
+  - crevice
+  - pus
+  - smear
+  - hoagie
+  - squat
+  - sputum
+  - goiter
+  - gurgle
+  - curd
+  - maggots
+  - fetus
+  - orifice
+  - jowls
+  - porn
+  - splooge
+  - larva
+  - expulsion
+
+verb_gross_thing:
+  - lick
+  - eat
+  - savor
