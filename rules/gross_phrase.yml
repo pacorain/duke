@@ -37,6 +37,9 @@ gross_adjective:
   - mashed
   - veiny
   - thrusting
+  - boiling
+  - spunky
+  - gaping
 
 gross_attributive_noun:
   - panty
@@ -59,6 +62,8 @@ gross_attributive_noun:
   - menstruation
   - fungus
   - sweat
+  - corona
+  - skunk
 
 gross_noun:
   - ointment
@@ -81,6 +86,8 @@ gross_noun:
   - larva
   - expulsion
   - twinkie
+  - oil
+  - plunger
 
 verb_gross_thing:
   - lick
